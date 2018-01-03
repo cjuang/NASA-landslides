@@ -89,17 +89,32 @@
 					text-align: center;
 					text-decoration: none;
 					padding: 10px 16px;
-
 				}
 				li.navbarLR a:hover {
 					background-color: #142F3E;
 				}
-				
 				li.navbarLR p {
 					/* cancel out default */
 					margin-bottom: 0;
 				}
+				div#FAQ-expanded {
+					display: block;
+				}
+				a#FAQ-expandable {
+					text-decoration: none;
+				}
 			</style>
+			<!-- Scripts -->
+			<script>
+				function expandcollapse()
+				{
+					// adapted from http://www.slashcoding.com/collapsible-element-using-javascript/
+					if(document.getElementById('FAQ-expanded').style.display == 'none')
+						document.getElementById('FAQ-expanded').style.display = 'block';
+					else
+						document.getElementById('FAQ-expanded').style.display = 'none';
+				}
+			</script>
 			
 			<div id = "container"> <!-- Banner -->
 				<div id = "LRbanner-bg"> <!-- background of banner -->
@@ -170,21 +185,21 @@
 					
 					<h2>Frequently Asked Questions</h2>
 					
-					<h3 class = "FAQ-expandable">How do we record the landslides?</h3>
+					<h3><a href = "javascript:;" onclick = expandcollapse() id = "FAQ-expandable">> How do we record the landslides?</a></h3>
 					<div id = "FAQ-expanded">
-					<p>
-					We have been recording all landslide events in the <i>Global Landslide Catalog (GLC).</i> 
-					The GLC is the <b>largest openly available global database of rainfall-triggered mass 
-					movements</b>, including landslides, mudslides, debris flows, and more. The database was 
-					created in 2007 by Dr. Dalia Kirschbaum (NASA Goddard Space Flight Center / 617), and now 
-					contains more than 11,000 reports on landslides around the world. Landslide reports come from all 
-					types of media, including news articles and other databases. 
-					</p>
-					<p>
-					The GLC provides open landslide hazard information to the broader community to 
-					improve basic landslide science and models, increase situational awareness, and improve 
-					disaster response. The GLC has been cited more than 75 times in peer-reviewed articles.
-					</p>
+						<p>
+						We have been recording all landslide events in the <i>Global Landslide Catalog (GLC).</i> 
+						The GLC is the <b>largest openly available global database of rainfall-triggered mass 
+						movements</b>, including landslides, mudslides, debris flows, and more. The database was 
+						created in 2007 by Dr. Dalia Kirschbaum (NASA Goddard Space Flight Center / 617), and now 
+						contains more than 11,000 reports on landslides around the world. Landslide reports come from all 
+						types of media, including news articles and other databases. 
+						</p>
+						<p>
+						The GLC provides open landslide hazard information to the broader community to 
+						improve basic landslide science and models, increase situational awareness, and improve 
+						disaster response. The GLC has been cited more than 75 times in peer-reviewed articles.
+						</p>
 					</div> <!-- end of FAQ-expanded -->
 				</div> <!-- end left column in wrapper -->
 
