@@ -84,7 +84,7 @@
 				}
 				li.navbarLR a {
 					display: block;
-					color: white;
+					color: #FFF;
 					font-size: 14px;
 					text-align: center;
 					text-decoration: none;
@@ -98,14 +98,14 @@
 					margin-bottom: 0;
 				}
 				div#FAQ-expanded {
-					display: block;
+					display: none;
 				}
 				a#FAQ-expandable {
 					text-decoration: none;
 				}
 			</style>
 			<!-- Scripts -->
-			<script>
+			<!-- <script>
 				function expandcollapse()
 				{
 					// adapted from http://www.slashcoding.com/collapsible-element-using-javascript/
@@ -114,8 +114,8 @@
 					else
 						document.getElementById('FAQ-expanded').style.display = 'none';
 				}
-			</script>
-			
+      </script>
+			-->
 			<div id = "container"> <!-- Banner -->
 				<div id = "LRbanner-bg"> <!-- background of banner -->
 					<img src="images/banner-suscepmap.png" style='height: 100%; width: 100%; object-fit: contain' 
@@ -141,8 +141,8 @@
 			<ul class = "navbarLR">
 				<li class = "navbarLR"><a href = "#">Home</a></li>
 				<li class = "navbarLR"><a href = "#">Training and Guides</a></li>
-				<li class = "navbarLR" style = "float: right;"><a href = "https://maps.nccs.nasa.gov/arcgis/apps/webappviewer/index.html?id=824ea5864ec8423fb985b33ee6bc05b7">Landslide Viewer</a></li>
-				<li class = "navbarLR" style = "float: right;"><a href = "#">Landslide Reporter<p style = "font-size: 10px">Coming soon!</p></a></li>
+				<li class = "navbarLR" style = "float: right; background-color: #5AB1BB"><a href = "https://maps.nccs.nasa.gov/arcgis/apps/webappviewer/index.html?id=824ea5864ec8423fb985b33ee6bc05b7">Landslide Viewer</a></li>
+				<li class = "navbarLR" style = "float: right; background-color: #5AB1BB"><a href = "#">Landslide Reporter<p style = "font-size: 10px">Coming soon!</p></a></li>
 			</ul> <!-- end Navigation -->
 			<br>
 			<div class="twocol"> <!-- Two-column layout -->
@@ -159,29 +159,11 @@
 					download the GLC from the viewer or use its API for more in-depth analysis.</p>
 					
 					<h3>Citizen scientists, your contribution matters!</h3>
-					<p>
-					The Global Landslide Catalog (GLC) provides new insight into landslide hazards thanks 
-					to its global scope, but it is hard to maintain.<br>
-					Citizen science enables:
-					<ol>
-						<li>A collection with as many different sources and as little bias as possible, 
-						including first-hand accounts, reports in other languages, and points from other 
-						databases
-						<li>More hands to contribute reports, leading to a more up-to-date and thorough
-						database
-						<li>Increased education about landslides as a natural process and natural/man-made 
-						hazard
-					</ol>
-					<p>
-					With citizen science, we can improve both the quantity and quality of the Global 
-					Landslide Catalog to show a clearer image of how landslides are shaping our world.
-					Every landslide report made by you is another step towards a more predictable future!
-					</p>
 					
 					<h2>Frequently Asked Questions</h2>
 					
-					<h3><a href = "javascript:;" onclick = expandcollapse() id = "FAQ-expandable">> How do we record the landslides?</a></h3>
-					<div id = "FAQ-expanded">
+					<h3><a href = "javascript:;" onclick = expandcollapse() class = "FAQ-expandable">> How do we record the landslides?</a></h3>
+					<div class = "FAQ-expanded">
 						<p>
 						We have been recording all landslide events in the <i>Global Landslide Catalog (GLC).</i> 
 						The GLC is the <b>largest openly available global database of rainfall-triggered mass 
@@ -196,12 +178,30 @@
 						disaster response. The GLC has been cited more than 75 times in peer-reviewed articles.
 						</p>
 					</div> <!-- end of FAQ-expanded -->
+					
+					<h3><a href = "javascript:;" onclick = expandcollapse() class = "FAQ-expandable">> How can citizen scientists help?</a></h3>
+					<div class = "FAQ-expanded">
+						<p>
+						The Global Landslide Catalog (GLC) provides new insight into landslide hazards thanks 
+						to its global scope, but it is hard to maintain.<br>
+						Citizen science enables:</p>
+						<ol>
+						<li>A collection with as many different sources and as little bias as possible, 
+						including first-hand accounts, reports in other languages, and points from other 
+						databases
+						<li>More hands to contribute reports, leading to a more up-to-date and thorough
+						database
+						<li>Increased education about landslides as a natural process and natural/man-made 
+						hazard
+						</ol>
+						<p>
+						With citizen science, we can improve both the quantity and quality of the Global 
+						Landslide Catalog to show a clearer image of how landslides are shaping our world.
+						Every landslide report made by you is another step towards a more predictable future!
+                                     </p>
+					</div> <!-- end of FAQ-expanded -->
 				</div> <!-- end left column in wrapper -->
 				<div class = "urtwo"> <!-- begin right column in wrapper -->
-				<h2>Explore</h2>
-				<p>
-				Landslide Viewer: 
-				</p>
 				<h2>People</h2>
 				<h3>Project Managers</h3>
 				<ul>
