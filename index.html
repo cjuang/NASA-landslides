@@ -98,7 +98,7 @@
 					margin-bottom: 0;
 				}
 				div#FAQ-expanded {
-					display: block;
+					display: none;
 				}
 				a#FAQ-expandable {
 					text-decoration: none;
@@ -147,45 +147,21 @@
 			<br>
 			<div class="twocol"> <!-- Two-column layout -->
 				<div class="urone"> <!-- begin left column in wrapper -->
-					<h2>What is Landslide Reporter?</h2>
-					Landslide Reporter is an online web application where citizen scientists can submit, view, 
-					and analyze information about landslides worldwide from their web browser or mobile device.
+					<h2>Landslide Reporter: Submit a Landslide</h2>
+					<p>Landslide Reporter is a new web application where you can submit, view, 
+					and analyze information about landslides worldwide from their web browser or mobile device.</p>
+					<p>You can easily add information about the location, date, type of landslide, and other details about the event using the 
+						submission tool. Once approved, the submissions are added to the Global Landslide Catalog, an open database of rainfall-triggered landslides around the world.</p>
 					
-					
-					<ul>
-						<li><b>Submit a Landslide:</b> In <i>Landslide Reporter</i>, you can submit landslide reports 
-						to the GLC from your web browser or mobile browser. You can easily add information about
-						the location, date, type of landslide, and other details about the event using the 
-						submission tool. Once approved, the submissions are added to the GLC for public use.
-						<li><b>View and Analyze:</b> In <i>Landslide Viewer</i>, you can see all approved 
-						landslide reports on the world map. Selecting different layers on the map categorizes 
-						the reports over time, by type of mass movement, or by number of fatalities. You can 
-						download the GLC from the viewer or use its API for more in-depth analysis.
-					</ul>
-					</p>
-					<h3>Citizen scientists, your contribution matters!</h3>
-					<p>
-					The Global Landslide Catalog (GLC) provides new insight into landslide hazards thanks 
-					to its global scope, but it is hard to maintain.<br>
-					Citizen science enables:
-					<ol>
-						<li>A collection with as many different sources and as little bias as possible, 
-						including first-hand accounts, reports in other languages, and points from other 
-						databases
-						<li>More hands to contribute reports, leading to a more up-to-date and thorough
-						database
-						<li>Increased education about landslides as a natural process and natural/man-made 
-						hazard
-					</ol>
-					<p>
-					With citizen science, we can improve both the quantity and quality of the Global 
-					Landslide Catalog to show a clearer image of how landslides are shaping our world.
-					Every landslide report made by you is another step towards a more predictable future!
-					</p>
+					<h2>Landslide Viewer: Visualize the Data </h2>
+					<p>In <i>Landslide Viewer</i>, you can see all approved landslide reports on the world map. Selecting different layers on the map categorizes 
+					the reports over time, by type of mass movement, or by number of fatalities. You can 
+					download the GLC from the viewer or use its API for more in-depth analysis.</p>
 					
 					<h2>Frequently Asked Questions</h2>
 					
-					<h3><a href = "javascript:;" onclick = expandcollapse() id = "FAQ-expandable">> How do we record the landslides?</a></h3>
+					<h3><a href = "javascript:;" onclick = expandcollapse() id = "FAQ-expandable">> How do we record the landslides? / 
+						What is the Global Landslide Catalog (GLC)?</a></h3>
 					<div id = "FAQ-expanded">
 						<p>
 						We have been recording all landslide events in the <i>Global Landslide Catalog (GLC).</i> 
@@ -201,6 +177,29 @@
 						disaster response. The GLC has been cited more than 75 times in peer-reviewed articles.
 						</p>
 					</div> <!-- end of FAQ-expanded -->
+					
+					<h3><a href = "javascript:;" onclick = expandcollapse() id = "FAQ-expandable">> How do citizen scientists help?</a></h3>
+					<div id = 'FAQ-expanded">
+						<p>
+						The Global Landslide Catalog (GLC) provides new insight into landslide hazards thanks 
+						to its global scope, but it is hard to maintain.<br>
+						Citizen science enables:
+						<ol>
+							<li>A collection with as many different sources and as little bias as possible, 
+							including first-hand accounts, reports in other languages, and points from other 
+							databases
+							<li>More hands to contribute reports, leading to a more up-to-date and thorough
+							database
+							<li>Increased education about landslides as a natural process and natural/man-made 
+							hazard
+						</ol>
+						<p>
+						With citizen science, we can improve both the quantity and quality of the Global 
+						Landslide Catalog to show a clearer image of how landslides are shaping our world.
+						Every landslide report made by you is another step towards a more predictable future!
+						</p>
+					</div> <!-- end of FAQ-expanded -->
+					
 				</div> <!-- end left column in wrapper -->
 
 				<div class = "urtwo"> <!-- begin right column in wrapper -->
