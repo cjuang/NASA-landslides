@@ -105,7 +105,7 @@
 				}
 			</style>
 			<!-- Scripts -->
-			<script>
+			<!-- <script>
 				function expandcollapse()
 				{
 					// adapted from http://www.slashcoding.com/collapsible-element-using-javascript/
@@ -115,7 +115,7 @@
 						document.getElementById('FAQ-expanded').style.display = 'none';
 				}
 			</script>
-			
+			-->
 			<div id = "container"> <!-- Banner -->
 				<div id = "LRbanner-bg"> <!-- background of banner -->
 					<img src="images/banner-suscepmap.png" style='height: 100%; width: 100%; object-fit: contain' 
@@ -158,11 +158,12 @@
 					the reports over time, by type of mass movement, or by number of fatalities. You can 
 					download the GLC from the viewer or use its API for more in-depth analysis.</p>
 					
+					<h3>Citizen scientists, your contribution matters!</h3>
+					
 					<h2>Frequently Asked Questions</h2>
 					
-					<h3><a href = "javascript:;" onclick = expandcollapse() id = "FAQ-expandable">> How do we record the landslides? / 
-						What is the Global Landslide Catalog (GLC)?</a></h3>
-					<div id = "FAQ-expanded">
+					<h3><a href = "javascript:;" onclick = expandcollapse() class = "FAQ-expandable">> How do we record the landslides?</a></h3>
+					<div class = "FAQ-expanded">
 						<p>
 						We have been recording all landslide events in the <i>Global Landslide Catalog (GLC).</i> 
 						The GLC is the <b>largest openly available global database of rainfall-triggered mass 
@@ -178,20 +179,20 @@
 						</p>
 					</div> <!-- end of FAQ-expanded -->
 					
-					<h3><a href = "javascript:;" onclick = expandcollapse() id = "FAQ-expandable">> How do citizen scientists help?</a></h3>
-					<div id = 'FAQ-expanded">
+					<h3><a href = "javascript:;" onclick = expandcollapse() class = "FAQ-expandable">> How can citizen scientists help?</a></h3>
+					<div class = "FAQ-expanded">
 						<p>
 						The Global Landslide Catalog (GLC) provides new insight into landslide hazards thanks 
 						to its global scope, but it is hard to maintain.<br>
-						Citizen science enables:
+						Citizen science enables:</p>
 						<ol>
-							<li>A collection with as many different sources and as little bias as possible, 
-							including first-hand accounts, reports in other languages, and points from other 
-							databases
-							<li>More hands to contribute reports, leading to a more up-to-date and thorough
-							database
-							<li>Increased education about landslides as a natural process and natural/man-made 
-							hazard
+						<li>A collection with as many different sources and as little bias as possible, 
+						including first-hand accounts, reports in other languages, and points from other 
+						databases
+						<li>More hands to contribute reports, leading to a more up-to-date and thorough
+						database
+						<li>Increased education about landslides as a natural process and natural/man-made 
+						hazard
 						</ol>
 						<p>
 						With citizen science, we can improve both the quantity and quality of the Global 
@@ -199,9 +200,7 @@
 						Every landslide report made by you is another step towards a more predictable future!
 						</p>
 					</div> <!-- end of FAQ-expanded -->
-					
 				</div> <!-- end left column in wrapper -->
-
 				<div class = "urtwo"> <!-- begin right column in wrapper -->
 				<h2>Explore</h2>
 				<p>
@@ -228,8 +227,6 @@
 	<!-- 
 **** END MAIN CONTENT HERE. ****
 -->
-
-
                 </div>
                 <!-- END Main content div -->
           <div id="leftcontent">
@@ -243,9 +240,6 @@
             
             <!-- END Content Wrapper, this div surrounds the main content and the Left Nav -->
 <!--#include virtual="/sed/content/static_html/600/Footer.html" -->
-
         </div>
-
-
     </body>
 </html>
