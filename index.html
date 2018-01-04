@@ -125,17 +125,6 @@
 					text-decoration: none;
 				}
 			</style>
-			<!-- Scripts -->
-			<script>
-				function expandcollapse()
-				{
-					// adapted from http://www.slashcoding.com/collapsible-element-using-javascript/
-					if(document.getElementById('FAQ-expanded').style.display == 'none')
-						document.getElementById('FAQ-expanded').style.display = 'block';
-					else
-						document.getElementById('FAQ-expanded').style.display = 'none';
-				}
-			</script>
 			
 			<div id = "container"> <!-- Banner -->
 				<div id = "LRbanner-bg"> <!-- background of banner -->
@@ -168,7 +157,6 @@
 			<br>
 			<div class="twocol"> <!-- Two-column layout -->
 				<div class="urone"> <!-- begin left column in wrapper -->
-					<h2>Citizen Science for Landslides</h2>
 					<div class = "LRsmbanner" style = "background: url('images/bannersmall_LR.png') center center / cover no-repeat;">
 						<div class = "LRsmbanner-overlay">
 							<p class = "LRsmbanner-title">LANDSLIDE REPORTER: Submit a Landslide<br>Coming early 2018</p>
@@ -188,48 +176,77 @@
 					Selecting different layers on the map categorizes the reports over time, by type of mass movement, or by number of fatalities. 
 					Download the GLC from the viewer or use its API for more in-depth analysis.</p>
 					
-					<h3>Citizen scientists, your contribution matters!</h3>
-					
-					<h2>Frequently Asked Questions</h2>
-					
-					<h3><a href = "javascript:;" onclick = expandcollapse() class = "FAQ-expandable">> How do we record the landslides?</a></h3>
-					<div id = "FAQ-expanded">
-						<p>
-						We have been recording all landslide events in the <i>Global Landslide Catalog (GLC).</i> 
-						The GLC is the <b>largest openly available global database of rainfall-triggered mass 
+					<h3>Learn more:</h3>
+					<!-- FAQ 1 -->
+					<span class = "showhide keystaff_header fnt_bold dsply_blck collapsible-heading">
+						<a href = "#" class = "collapsible-heading-toggle">
+							<span class = "collapsible-heading-status">Hide</span>
+							> How do we record the landslides?
+						</a>
+					</span>
+					<ul class = "type-list-none collapsible-content collapsible-content-collapsed" aria-hidden = "true">
+						<li>We are recording all landslide events in the <i>Global Landslide Catalog (GLC)</i>,
+						a database of rainfall-triggered landslides that has existed since 2007. Previous landslide
+						submissions have come from members of our lab, but now we need the help of citizen scientists
+						to make the database even better.
+					</ul> <!-- end of FAQ 1 -->
+					<br>
+					<!-- FAQ 2 -->
+					<span class = "showhide keystaff_header fnt_bold dsply_blck collapsible-heading">
+						<a href = "#" class = "collapsible-heading-toggle">
+							<span class = "collapsible-heading-status">Hide</span>
+							> What is the Global Landslide Catalog?
+						</a>
+					</span>
+					<ul class = "type-list-none collapsible-content collapsible-content-collapsed" aria-hidden = "true">
+						<li>The GLC is the <b>largest openly available global database of rainfall-triggered mass 
 						movements</b>, including landslides, mudslides, debris flows, and more. The database was 
 						created in 2007 by Dr. Dalia Kirschbaum (NASA Goddard Space Flight Center / 617), and now 
 						contains more than 11,000 reports on landslides around the world. Landslide reports come from all 
 						types of media, including news articles and other databases. 
-						</p>
-						<p>
+						<li>
 						The GLC provides open landslide hazard information to the broader community to 
 						improve basic landslide science and models, increase situational awareness, and improve 
 						disaster response. The GLC has been cited more than 75 times in peer-reviewed articles.
-						</p>
-					</div> <!-- end of FAQ-expanded -->
-					
-					<h3><a href = "javascript:;" onclick = expandcollapse() class = "FAQ-expandable">> How can citizen scientists help?</a></h3>
-					<div id = "FAQ-expanded">
-						<p>
-						The Global Landslide Catalog (GLC) provides new insight into landslide hazards thanks 
+					</ul> <!-- end of FAQ 2 -->
+					<br>
+					<!-- FAQ 3 -->
+					<span class = "showhide keystaff_header fnt_bold dsply_blck collapsible-heading">
+						<a href = "#" class = "collapsible-heading-toggle">
+							<span class = "collapsible-heading-status">Hide</span>
+							> How can citizen scientists help?
+						</a>
+					</span>
+					<ul class = "type-list-none collapsible-content collapsible-content-collapsed" aria-hidden = "true">
+						<li>The Global Landslide Catalog (GLC) provides new insight into landslide hazards thanks 
 						to its global scope, but it is hard to maintain.<br>
-						Citizen science enables:</p>
+						Citizen science enables:
 						<ol>
-						<li>A collection with as many different sources and as little bias as possible, 
+						<li>1. A collection with as many different sources and as little bias as possible, 
 						including first-hand accounts, reports in other languages, and points from other 
 						databases
-						<li>More hands to contribute reports, leading to a more up-to-date and thorough
+						<li>2. More hands to contribute reports, leading to a more up-to-date and thorough
 						database
-						<li>Increased education about landslides as a natural process and natural/man-made 
+						<li>3. Increased education about landslides as a natural process and natural/man-made 
 						hazard
 						</ol>
-						<p>
+						<li>
 						With citizen science, we can improve both the quantity and quality of the Global 
 						Landslide Catalog to show a clearer image of how landslides are shaping our world.
 						Every landslide report made by you is another step towards a more predictable future!
-                        </p>
-					</div> <!-- end of FAQ-expanded -->
+                        
+					</ul> <!-- end of FAQ 3 -->
+					<br>
+					<!-- FAQ 4 -->
+					<span class = "showhide keystaff_header fnt_bold dsply_blck collapsible-heading">
+						<a href = "#" class = "collapsible-heading-toggle">
+							<span class = "collapsible-heading-status">Hide</span>
+							> Can I download the Global Landslide Catalog for my research?
+						</a>
+					</span>
+					<ul class = "type-list-none collapsible-content collapsible-content-collapsed" aria-hidden = "true">
+						<li>Yes! The Global Landslide Catalog is available to download from the Landslide Viewer page.
+					</ul> <!-- end of FAQ 4 -->
 				</div> <!-- end left column in wrapper -->
 				<div class = "urtwo"> <!-- begin right column in wrapper -->
 				<h2>Overview</h2>
