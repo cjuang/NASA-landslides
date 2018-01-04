@@ -61,17 +61,36 @@
 					right: 165px;
 					background-color:rgba(54,53,55,0.5);
 				}
-				p.LRbanner-title {
+				p#LRbanner-title {
 					font-size: 32px;
 					font-weight: normal;
 					font-family: "Trebuchet MS", Helvetica, sans-serif;
 					color: #FFF;
 				}
-				p.LRbanner-subtitle {
+				p#LRbanner-subtitle {
 					font-size: 18px;
 					font-weight: normal;
 					font-family: "Trebuchet MS", Helvetica, sans-serif;
 					color: #FFF;
+				}
+				div.LRsmbanner {
+					position: relative;
+					margin: 0;
+					padding: 0;
+					width: 475px;
+					height: 160px;
+				}
+				div.LRsmbanner-overlay {
+					position: absolute; 
+					bottom: 0;
+				}
+				p.LRsmbanner-title {
+					font-size: 18px;
+					font-weight: normal;
+					font-family: "Trebuchet MS", Helvetica, sans-serif;
+					color: #FFF;
+					padding: 5px;
+					background-color:rgba(54,53,55,0.7);
 				}
 				ul.navbarLR {
 					padding: 0;
@@ -124,10 +143,10 @@
 						<tr>
 							<td><img src = "images/LR-logo.png" alt = "Landslide Reporter" width = "120px">
 							</td>
-							<td width = 300px"><p class = "LRbanner-title">
+							<td width = 300px"><p id = "LRbanner-title">
 							Landslide Reporter
 							</p>
-							<p class = "LRbanner-subtitle">
+							<p id = "LRbanner-subtitle">
 							Crowdsourcing landslide data through citizen science
 							</p>
 							</td>
@@ -145,11 +164,21 @@
 			<br>
 			<div class="twocol"> <!-- Two-column layout -->
 				<div class="urone"> <!-- begin left column in wrapper -->
-					<h2>Landslide Reporter: Submit a Landslide</h2>
+					<h2>Citizen Science for Landslides</h2>
+					<div class = "LRsmbanner" style = "background: url('images/bannersmall_LR.png') center center / cover no-repeat;">
+						<div class = "LRsmbanner-overlay">
+							<p class = "LRsmbanner-title">LANDSLIDE REPORTER: Submit a Landslide<br>Coming early 2018</p>
+						</div>
+					</div>
+					<br>
 					<p>You can easily add information about the location, date, type of landslide, and other details about the event using <i>Landslide Reporter's</i>
 						submission tool. Once approved, the submissions are added to the Global Landslide Catalog, an open database of rainfall-triggered landslides around the world.</p>
-					
-					<h2>Landslide Viewer: Visualize the Data </h2>
+					<div class = "LRsmbanner" style = "background: url('images/bannersmall_LV.png') center center / cover no-repeat;">
+						<div class = "LRsmbanner-overlay">
+							<p class = "LRsmbanner-title">LANDSLIDE VIEWER: Visualize the Data</p>
+						</div>
+					</div>
+					<br>
 					<p>In <i>Landslide Viewer</i>, you can see all approved landslide reports on the world map. Selecting different layers on the map categorizes 
 					the reports over time, by type of mass movement, or by number of fatalities. You can 
 					download the GLC from the viewer or use its API for more in-depth analysis.</p>
