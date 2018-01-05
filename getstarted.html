@@ -65,23 +65,30 @@
 					font-family: "Trebuchet MS", Helvetica, sans-serif;
 					color: #000;
 				}
-
-				.LR-tab {
+				.LRtab {
 					display: block;
-					padding: 2px;
+					padding: 4px;
 					list-style-type: none;
 					border-style: solid;
 					border-width: 1px;
 					border-color: #DCDCDD;
 					background-color: #FFF;
 				}
-
+				.LRtab.active {
+					background-color: #DCDCDD;
+					border-color: #5AB1BB;
+				}
+				.LRcontent {
+					display: none;
+				}
+				.LRcontent#LRprocess {
+					display: block;
+				}
 				ul.navbarLR {
 					padding-right: 5px;
 					margin-right: 20px;
 					overflow: hidden;
 				}
-				
 				li.navbarLR {
 					margin-bottom: 0;
 					margin-left: 0;
@@ -104,6 +111,23 @@
 					color: #DCDCDD;
 				}
 			</style>
+			
+			<script>
+				// adapted from https://www.w3schools.com/howto/howto_js_tabs.asp
+				function openLRinfo(event, LRtabname) {
+					var i, LRcontent, LRtab;
+					LRcontent = document.getElementsByClassName("LRcontent");
+					for (i = 0; i < LRcontent.length; i++) {
+						LRcontent[i].style.display = "none";
+					}
+					LRtab = document.getElementsByClassName("LRtab");
+					for (i = 0; i < LRtab.length; i++) {
+						LRtab[i].className = LRtab[i].className.replace(" active", "");
+					}
+					document.getElementById(LRtabname).style.display = "block";
+					event.currentTarget.className += " active";
+				}
+			</script>
 			
 			<div id = "container"> <!-- Banner -->
 				<div id = "LRbanner-overlay"> <!-- banner logo and text -->
@@ -184,14 +208,14 @@
 				
 				<div class="urtwo"> <!-- begin right column in wrapper -->
 					<h2>Navigation</h2>
-					<a class = "LR-tab" onclick = "openLRinfo(event, 'LRprocess')">The Submission Process</a>
-					<br><a class = "LR-tab" onclick = "openLRinfo(event, 'LRuse')">Using Landslide Reporter</a>
-					<br><a class = "LR-tab" onclick = "openLRinfo(event, 'LRidentify')">Identifying a Landslide</a>
-					<br><a class = "LR-tab" onclick = "openLRinfo(event, 'LRsubmit')">Submitting a Report</a>
-					<br><a class = "LR-tab" onclick = "openLRinfo(event, 'LRview')">Reviewing your Reports</a>
-					<br><a class = "LR-tab" onclick = "openLRinfo(event, 'LVuse')">Using Landslide Viewer</a>
-					<br><a class = "LR-tab" onclick = "openLRinfo(event, 'LVdownload')">Downloading the Catalog</a>
-					
+					<a class = "LRtab active" onclick = "openLRinfo(event, 'LRprocess')" id = "keepLRprocessOpen">The Submission Process</a>
+					<a class = "LRtab" onclick = "openLRinfo(event, 'LRuse')">Using Landslide Reporter</a>
+					<a class = "LRtab" onclick = "openLRinfo(event, 'LRidentify')">Identifying a Landslide</a>
+					<a class = "LRtab" onclick = "openLRinfo(event, 'LRsubmit')">Submitting a Report</a>
+					<a class = "LRtab" onclick = "openLRinfo(event, 'LRview')">Reviewing your Reports</a>
+					<a class = "LRtab" onclick = "openLRinfo(event, 'LVuse')">Using Landslide Viewer</a>
+					<a class = "LRtab" onclick = "openLRinfo(event, 'LVdownload')">Downloading the Catalog</a>
+					<br>
 					<h2>Contact</h2>
 					<p>If you still need help or experience a bug, feel free to email
 					<a href = "mailto:landslide_support@nccs.nasa.gov">landslide_support@nccs.nasa.gov</a>.
