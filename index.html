@@ -52,12 +52,14 @@
 				#LRbanner-bg{
 					position: relative;
 					width: 720px;
+					height: 250px;
 					object-fit: contain;
+					background: url('images/banner-suscepmap.png') center center / cover no-repeat;
 				}
 				#LRbanner-overlay{
 					position: absolute;
-					top: 80px;
-					right: 165px;
+					width: 50%;
+					margin: auto;
 					background-color:rgba(54,53,55,0.5);
 				}
 				p#LRbanner-title {
@@ -123,22 +125,13 @@
 			
 			<div id = "container"> <!-- Banner -->
 				<div id = "LRbanner-bg"> <!-- background of banner -->
-					<img src="images/banner-suscepmap.png" style='height: 100%; width: 100%; object-fit: contain' 
-					alt="Landslide Reporter: Crowdsourcing Landslide Data through Citizen Science">
+					<div id = "LRbanner-overlay"> <!-- banner logo and text -->
+						<p id = "LRbanner-title">
+								Cooperative Open Online Landslide Repository (COOLR)
+						</p>
+					</div>
 				</div>
-				<div id = "LRbanner-overlay"> <!-- banner logo and text -->
-					<table>
-						<tr>
-							<td width = 300px"><p id = "LRbanner-title">
-							Cooperative Open Online Landslide Repository (COOLR)
-							</p>
-							<!-- <p id = "LRbanner-subtitle">
-							
-							</p> -->
-							</td>
-						</tr>
-					</table>
-				</div>
+				
 			</div> <!-- end Banner -->
 			<!-- Navigation -->
 			<ul class = "navbarLR">
