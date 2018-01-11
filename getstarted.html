@@ -47,23 +47,39 @@
 **** START MAIN CONTENT HERE. ****
 **********************************
 -->	<!-- Welcome to Landslide Reporter! -->
+			<!-- import font -->
+			<link href="https://fonts.googleapis.com/css?family=PT+Serif" rel="stylesheet">
+			
 			<!-- CSS Styling -->
 			<style>
-				#LRbanner-overlay{
+				#LRbanner-bg{
 					position: relative;
-					display: block;
+					width: 720px;
+					height: auto;
+					margin: 0;
+					object-fit: contain;
+					background: url('images/banner-suscepmap.png') center center / cover no-repeat;
+				}
+				#LRbanner-overlay{
+					width: 100%;
+					margin: 0;
+					padding-top: 20px;
+					background-color:rgba(54,53,55,0.5);
 				}
 				p#LRbanner-title {
-					font-size: 28px;
+					font-size: 26px;
 					font-weight: normal;
-					font-family: "Trebuchet MS", Helvetica, sans-serif;
-					color: #000;
+					font-family: 'PT Serif', serif;
+					color: #fff;
+					line-height: 98%;
+					text-align: center;
 				}
 				p#LRbanner-subtitle {
-					font-size: 14px;
+					font-size: 18px;
 					font-weight: normal;
-					font-family: "Trebuchet MS", Helvetica, sans-serif;
-					color: #000;
+					font-family: 'PT Serif', serif;
+					color: #fff;
+					text-align: center;
 				}
 				.LRtab {
 					display: block;
@@ -129,30 +145,24 @@
 				}
 			</script>
 			
-			<div id = "container"> <!-- Banner -->
-				<div id = "LRbanner-overlay"> <!-- banner logo and text -->
-					<table>
-						<tr>
-							<td><img src = "images/LR-logo.png" alt = "Landslide Reporter" width = "80px">
-							</td>
-							<td width = 500px"><p id = "LRbanner-title">
-							Landslide Reporter
-							</p>
-							<p id = "LRbanner-subtitle">
-							Get Started
-							</p>
-							</td>
-						</tr>
-					</table>
+			<div id = "container">
+				<div id = "LRbanner-bg"> 
+					<div id = "LRbanner-overlay"> 
+						<p id = "LRbanner-title">
+								Cooperative Open Online Landslide Repository (COOLR)
+						</p>
+					</div>
+					
+					<!-- Navigation -->
+					<ul class = "navbarLR">
+						<li class = "navbarLR"><a href = "index.html">Home</a></li>
+						<li class = "navbarLR"><a href = "#">Get Started</a></li>
+						<li class = "navbarLR" style = "float: right; background-color: #5AB1BB"><a href = "https://maps.nccs.nasa.gov/arcgis/apps/webappviewer/index.html?id=824ea5864ec8423fb985b33ee6bc05b7">Landslide Viewer</a></li>
+						<li class = "navbarLR" style = "float: right; background-color: #5AB1BB"><a href = "#">Landslide Reporter</a></li>
+					</ul> <!-- end Navigation -->
 				</div>
+				
 			</div> <!-- end Banner -->
-			<!-- Navigation -->
-			<ul class = "navbarLR">
-				<li class = "navbarLR"><a href = "index.html">Home</a></li>
-				<li class = "navbarLR"><a href = "#">Get Started</a></li>
-				<li class = "navbarLR" style = "float: right; background-color: #5AB1BB"><a href = "https://maps.nccs.nasa.gov/arcgis/apps/webappviewer/index.html?id=824ea5864ec8423fb985b33ee6bc05b7">Landslide Viewer</a></li>
-				<li class = "navbarLR" style = "float: right; background-color: #5AB1BB"><a href = "#">Landslide Reporter</a></li>
-			</ul> <!-- end Navigation -->
 			<br>
 			<div class="twocol"> <!-- Two-column layout -->
 				<div class="urone"> <!-- begin left column in wrapper -->
