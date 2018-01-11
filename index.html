@@ -47,34 +47,41 @@
 **** START MAIN CONTENT HERE. ****
 **********************************
 -->	<!-- Welcome to Landslide Reporter! -->
+			<!-- import font -->
+			<link href="https://fonts.googleapis.com/css?family=PT+Serif" rel="stylesheet">
+			
 			<!-- CSS Styling -->
 			<style>
 				#LRbanner-bg{
 					position: relative;
 					width: 720px;
-					height: 150px;
+					height: 200px;
+					margin: 0;
 					object-fit: contain;
 					background: url('images/banner-suscepmap.png') center center / cover no-repeat;
 				}
 				#LRbanner-overlay{
-					width: 50%;
-					margin: auto;
-					padding: 4px;
-					text-align: center;
+					width: 100%;
+					margin: 0;
+					padding: 20px;
 					background-color:rgba(54,53,55,0.5);
 				}
 				p#LRbanner-title {
-					font-size: 28px;
+					font-size: 26px;
 					font-weight: normal;
-					font-family: "Trebuchet MS", Helvetica, sans-serif;
-					color: #FFF;
+					font-family: 'PT Serif', serif;
+					color: #000;
+					line-height: 98%;
+					text-align: center;
 				}
 				p#LRbanner-subtitle {
 					font-size: 18px;
 					font-weight: normal;
-					font-family: "Trebuchet MS", Helvetica, sans-serif;
-					color: #FFF;
+					font-family: 'PT Serif', serif;
+					color: #000;
+					text-align: center;
 				}
+
 				div.LRsmbanner {
 					position: relative;
 					margin: 0;
@@ -91,7 +98,7 @@
 				p.LRsmbanner-title {
 					font-size: 18px;
 					font-weight: normal;
-					font-family: "Trebuchet MS", Helvetica, sans-serif;
+					font-family: 'PT Serif', serif;
 					color: #FFF;
 					padding: 5px;
 					background-color:rgba(54,53,55,0.7);
@@ -124,23 +131,25 @@
 				}
 			</style>
 			
-			<div id = "container"> <!-- Banner -->
-				<div id = "LRbanner-bg"> <!-- background of banner -->
-					<div id = "LRbanner-overlay"> <!-- banner logo and text -->
+			<div id = "container">
+				<div id = "LRbanner-bg"> 
+					<div id = "LRbanner-overlay"> 
 						<p id = "LRbanner-title">
 								Cooperative Open Online Landslide Repository (COOLR)
 						</p>
 					</div>
+					
+					<!-- Navigation -->
+					<ul class = "navbarLR">
+						<li class = "navbarLR"><a href = "#">Home</a></li>
+						<li class = "navbarLR"><a href = "getstarted.html">Get Started</a></li>
+						<li class = "navbarLR" style = "float: right; background-color: #5AB1BB"><a href = "https://maps.nccs.nasa.gov/arcgis/apps/webappviewer/index.html?id=824ea5864ec8423fb985b33ee6bc05b7">Landslide Viewer</a></li>
+						<li class = "navbarLR" style = "float: right; background-color: #5AB1BB"><a href = "#">Landslide Reporter</a></li>
+					</ul> <!-- end Navigation -->
 				</div>
 				
 			</div> <!-- end Banner -->
-			<!-- Navigation -->
-			<ul class = "navbarLR">
-				<li class = "navbarLR"><a href = "#">Home</a></li>
-				<li class = "navbarLR"><a href = "getstarted.html">Get Started</a></li>
-				<li class = "navbarLR" style = "float: right; background-color: #5AB1BB"><a href = "https://maps.nccs.nasa.gov/arcgis/apps/webappviewer/index.html?id=824ea5864ec8423fb985b33ee6bc05b7">Landslide Viewer</a></li>
-				<li class = "navbarLR" style = "float: right; background-color: #5AB1BB"><a href = "#">Landslide Reporter</a></li>
-			</ul> <!-- end Navigation -->
+			
 			<br>
 			<div class="twocol"> <!-- Two-column layout -->
 				<div class="urone"> <!-- begin left column in wrapper -->
@@ -156,7 +165,9 @@
 					</div>
 					<br>
 					<p>Add information about the location, date, type of landslide, and other details about the event using <i>Landslide Reporter's</i>
-						submission tool. Once approved, the submissions are added to the Global Landslide Catalog, an open database of rainfall-triggered landslides around the world.</p>
+						submission tool. Citizen scientists, your submissions enhance our current landslide knowledge and supplement the 
+						Global Landslide Catalog, an open database of rainfall-triggered landslides around the world.
+					</p>
 					<a href = "https://maps.nccs.nasa.gov/arcgis/apps/webappviewer/index.html?id=824ea5864ec8423fb985b33ee6bc05b7">
 						<div class = "LRsmbanner" style = "background: url('images/bannersmall_LV.png') center center / cover no-repeat;">
 							<div class = "LRsmbanner-overlay">
@@ -165,7 +176,7 @@
 						</div>
 					</a>
 					<br>
-					<p>See all approved landslide reports on the world map in 
+					<p>See all approved landslide reports, Global Landslide Catalog data, and other information on the world map in 
 					<i><a href = "https://maps.nccs.nasa.gov/arcgis/apps/webappviewer/index.html?id=824ea5864ec8423fb985b33ee6bc05b7">Landslide Viewer</a></i>. 
 					Selecting different layers on the map categorizes the reports over time, by type of mass movement, or by number of fatalities. 
 					Download the GLC from the viewer or use its API for more in-depth analysis.</p>
