@@ -167,20 +167,19 @@
 			<div class="twocol"> <!-- Two-column layout -->
 				<div class="urone"> <!-- begin left column in wrapper -->
 					<div id = "LRprocess" class = "LRcontent">
-						<h2>The Submission Process</h2>
+						<h2>How Landslide Reporter Works</h2>
 						<p>Your goal as a citizen scientist is to submit landslides that you find in media or
 						in person to the Global Landslide Catalog in order to improve it for better landslide modeling
 						and prediction and future research. The main steps to this submission process are:
 						</p>
 						<ol>
-							<li><b>Find a landslide</b>: Browse through newspaper articles, online databases, or maybe your surroundings. Take note of where the landslide occurred, when it occurred, what type of landslide, why it occurred, what were the effects, and make note of the source you got the information from.
-							<li><b>Open the Application</b>: Open up the Landslide Reporter Application on your computer internet browser or mobile phone internet browser. Login with Facebook or Google. 
-							<li><b>Submit a Landslide Report</b>: Once the application is loaded, click the bright green box at the bottom that reads “Submit a Landslide Report” to open the submission form. Enter as much detail as you can about the landslide event’s location, type of mass movement, and other characteristics. 
-							<li><b>Validation</b>: All you need to do is wait while our team checks all of the incoming landslide reports and approves them.</b>
-							<li><b>View Your Landslide</b>:Once approved, your landslide will appear on Landslide Viewer with all of the other landslides that are part of the Global Landslide Catalog (GLC). You can play around with the data and other layers on the map.
-							<li><b>Download</b>:In Landslide Viewer, you have the option of downloading the entire Global Landslide Catalog for deeper analysis and research.
+							<li><b>Landslide occurs: </b>A landslide event occurs and is reported in a newspaper article, online database, or in your local area.
+							<li><b>Submit to Landslide Reporter: </b>Use Landslide Reporter describe and add an event to the database.
+							<li><b>Approval: </b>Our team checks all of the incoming landslide reports for accuracy.
+							<li><b>View Your Landslide: </b>Once approved, your landslide event appears on Landslide Viewer alongside other landslide databases like the GLC.
+							<li><b>Download and Use: </b>Scientists and the public can download the landslide data from Landslide Viewer to use in research, models, and policy work!
 						</ol>
-						<p>For more information about how to make a successful Landslide Reporter submission, please refer to the Navigation on the right.
+						<p>For more information about how you can make your landslide submission today, please refer to the Navigation on the right.
 						</p>
 					</div>
 					
@@ -188,21 +187,47 @@
 						<h2>Using Landslide Reporter</h2>
 						<h3>Contents</h3>
 						<ul>
-							<li>Using the application on the web
-							<li>Using the application on your mobile device
+							<li><a href = "#accessingapp">Accessing the application</a>
+							<li><a href = "#usingLRweb">Using Landslide Reporter on the web</a>
+							<li><a href = "#usingLRphone">Using Landslide Reporter on your mobile device</a>
 						</ul>
-						<h3>Accessing the Application</h3>
-						<p>The Landslide Reporter Application can be accessed by either your computer’s or your mobile phone’s internet browser. You will need a Facebook account or Google+ account to log in. Your credentials will not be made public; rather, the application wants to put all your landslide reports in one place.
+						<a id = "accessingapp"></a><h3>Accessing the Application</h3>
+						<p>Landslide Reporter can be accessed by either your computer’s or your mobile phone’s internet browser. You will need a Facebook account or Google+ account to log in. Logging in will allow you to access your previous submissions. Your credentials will not be linked to your reports in the online database.
+						</p>
+						<p>Upon signing in, you will be presented with the Terms and Conditions of using Landslide Reporter. Closing the box indicates you have accepted the Terms and Conditions.
+						</p>
+						<p>Once logged in, your browser may ask you to use your location. Click “Accept” or “Allow” so that the browser can pinpoint your current location, making it easier for you to submit local events.
+						</p>
+						
+						<a id = "usingLRweb"></a><h3>Using Landslide Reporter on the web</h3>
+						<p><i>Main screen</i></p>
+						<ol>
+							<li><b>Map navigation: </b>Zoom and search for locations
+							<li><b>Username: </b>Opens a drop-down menu to see your previous submissions or log out of your account.
+							<li><b>Terms and Conditions: </b>Opens the Terms and Conditions for using Landslide Reporter.
+							<li><b>Landslide Reporter Map Sidebar: </b>The sidebar for submitting new reports to the database.
+							<li><b>Red points: </b>Your previously-submitted landslide reports.
+							<li><b>Orange points: </b>Points added to the Cooperative Open Online Landslide Repository (COOLR).
+						<br><br>
+						<img src = "images/LR Web Schematic.png" alt = "Landslide Reporter screen">
+						<br>
+						<p>Are you ready to <a onclick = "openLRinfo(event, 'LRreport')">make a landslide report?</a></p>
+						
+						<a id = "usingLRphone"></a><h3>Using Landslide Reporter on your mobile device</h3>
+					</div>
+					
+					<div id = "LRreport" class = "LRcontent">
+						<h2>Making a Report</h2>
+					</div>
+					
+					<div id = "LRlocation" class = "LRcontent">
+						<h2>Pinpointing Landslide Location from an Article</h2>
 					</div>
 					
 					<div id = "LRidentify" class = "LRcontent">
-						<h2>Identifying a Landslide</h2>
+						<h2>Identifying the Type of Landslide</h2>
 					</div>
-					
-					<div id = "LRsubmit" class = "LRcontent">
-						<h2>Submitting a Report</h2>
-					</div>
-					
+										
 					<div id = "LRview" class = "LRcontent">
 						<h2>Reviewing your Reports</h2>
 					</div>
@@ -213,19 +238,63 @@
 					
 					<div id = "LVdownload" class = "LRcontent">
 						<h2>Downloading the Catalog</h2>
-					</div>
+						<p>The Global Landslide Catalog (GLC) can be downloaded from Landslide Viewer by clicking on the link “Download the full Landslide Catalog” at the top of the application. A new window will open with the information for downloading the GLC and the option to save it to your computer as a .gdb file.
+						</p>
+						<p>If you use the GLC in your research publication, we request that you reference the source of the data in any publication using the DOIs below:
+						</p>
+						<ul>
+							<li>Kirschbaum, D.B., Stanley, T., & Zhou, Y. (2015). Spatial and temporal analysis of a global landslide catalog. Geomorphology, 249, 4-15. doi:10.1016/j.geomorph.2015.03.016
+							<li>Kirschbaum, D.B., Adler, R., Hong, Y., Hill, S., & Lerner-Lam, A. (2010). A global landslide catalog for hazard applications: method, results, and limitations. Natural Hazards, 52, 561-575. doi:10.1007/s11069-009-9401-4
+						</ul>
+						<br><br>
+						<p>Any questions about citing the Global Landslide Catalog can be directed towards Dalia Kirschbaum, dalia.b.kirschbaum@nasa.gov. 
+						</p>
+					</div> <!-- end LVdownload div -->
+					
+					<div id = "LRfaq" class = "LRcontent">
+						<h2>Frequently Asked Questions</h2>
+						
+						<span class = "showhide keystaff_header fnt_bold dsply_blck collapsible-heading">
+							<a href = "#" class = "collapsible-heading-toggle">
+							Can I edit/delete my report after I submitted it?
+							</a>
+						</span>
+						<ul class = "type-list-none collapsible-content collapsible-content-collapsed" aria-hidden = "true">
+							If the submission hasn’t been checked by our team yet, you may edit it under My Submissions. Click on the report you want to edit, and click the pencil icon or trash icon in the top right-hand corner to edit or delete the report.
+						</ul>
+						
+						<span class = "showhide keystaff_header fnt_bold dsply_blck collapsible-heading">
+							<a href = "#" class = "collapsible-heading-toggle">
+							Are the submissions quality-checked before they’re added to the catalog?
+							</a>
+						</span>
+						<ul class = "type-list-none collapsible-content collapsible-content-collapsed" aria-hidden = "true">
+							Yes, all reports submitted through Landslide Reporter are quality-checked by members of our lab at NASA Goddard Space Flight Center for accuracy.
+						</ul>
+						
+					</div> <!-- end LRfaq div -->
+					
 				</div> <!-- end of left column in wrapper -->
 				
 				<div class="urtwo"> <!-- begin right column in wrapper -->
 					<h2>Navigation</h2>
-					<a class = "LRtab active" onclick = "openLRinfo(event, 'LRprocess')" id = "keepLRprocessOpen">The Submission Process</a>
+					<a class = "LRtab active" onclick = "openLRinfo(event, 'LRprocess')" id = "keepLRprocessOpen">How Landslide Reporter Works</a>
 					<a class = "LRtab" onclick = "openLRinfo(event, 'LRuse')">Using Landslide Reporter</a>
-					<a class = "LRtab" onclick = "openLRinfo(event, 'LRidentify')">Identifying a Landslide</a>
-					<a class = "LRtab" onclick = "openLRinfo(event, 'LRsubmit')">Submitting a Report</a>
+					<a class = "LRtab" onclick = "openLRinfo(event, 'LRreport')">Making a Report</a>
+					<a class = "LRtab" onclick = "openLRinfo(event, 'LRlocation')">Pinpointing Landslide Location from an Article</a>
+					<a class = "LRtab" onclick = "openLRinfo(event, 'LRidentify')">Identifying the Type of Landslide</a>
 					<a class = "LRtab" onclick = "openLRinfo(event, 'LRview')">Reviewing your Reports</a>
 					<a class = "LRtab" onclick = "openLRinfo(event, 'LVuse')">Using Landslide Viewer</a>
 					<a class = "LRtab" onclick = "openLRinfo(event, 'LVdownload')">Downloading the Catalog</a>
+					<a class = "LRtab" onclick = "openLRinfo(event, 'LRfaq')">Frequently Asked Questions</a>
 					<br>
+					<h2>For Data Users</h2>
+					<h3>Request for Acknowledgment of Use of GLC Data</h3>
+					<p>Users of the Global Landslide Catalog data are requested to reference the source of the data in any publication using the citations below:</p>
+					<ul>
+						<li>Kirschbaum, D.B., Stanley, T., & Zhou, Y. (2015). Spatial and temporal analysis of a global landslide catalog.<i> Geomorphology, 249</i>, 4-15. doi:<a href = "https://doi.org/10.1016/j.geomorph.2015.03.016">10.1016/j.geomorph.2015.03.016</a>
+						<li>Kirschbaum, D.B., Adler, R., Hong, Y., Hill, S., & Lerner-Lam, A. (2010). A global landslide catalog for hazard applications: method, results, and limitations. <i>Natural Hazards, 52,</i> 561-575. <a href = "https://doi.org/10.1007/s11069-009-9401-4">doi:10.1007/s11069-009-9401-4</a>
+					</ul>
 					<h2>Contact</h2>
 					<p>If you still need help or experience a bug, feel free to email
 					<a href = "mailto:landslide_support@nccs.nasa.gov">landslide_support@nccs.nasa.gov</a>.
