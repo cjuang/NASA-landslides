@@ -55,7 +55,6 @@
 				#LRbanner-bg{
 					position: relative;
 					width: 720px;
-					height: auto;
 					margin: 0;
 					object-fit: contain;
 					background: url('images/banner-fatalmap.png') center center / cover no-repeat;
@@ -106,6 +105,7 @@
 					
 				}
 				ul.navbarLR {
+					bottom: 0;
 					padding-right: 5px;
 					margin-right: 20px;
 					overflow: hidden;
@@ -145,30 +145,21 @@
 					<ul class = "navbarLR">
 						<li class = "navbarLR"><a href = "#">Home</a></li>
 						<li class = "navbarLR"><a href = "getstarted.html">Get Started</a></li>
+						<li class = "navbarLR"><a href = "publications.html">Publications</a></li>
 						<li class = "navbarLR" style = "float: right; background-color: #5AB1BB"><a href = "https://maps.nccs.nasa.gov/arcgis/apps/webappviewer/index.html?id=824ea5864ec8423fb985b33ee6bc05b7">Landslide Viewer</a></li>
 						<li class = "navbarLR" style = "float: right; background-color: #5AB1BB"><a href = "#">Landslide Reporter</a></li>
 					</ul> <!-- end Navigation -->
 				</div>
 				
 			</div> <!-- end Banner -->
-			
-			<br>
-			<div class="twocol"> <!-- Two-column layout -->
-				<div class="urone"> <!-- begin left column in wrapper -->
-					<h2>Overview</h2>
-					<p>The Cooperative Open Landslide Inventory (COOLR) is a worldwide database of landslide events. It currently includes NASA’s Global Landslide Catalog (GLC) and citizen science data, and will soon allow for other landslide inventories. COOLR can be accessed on Landslide Viewer, and citizen scientists can contribute to COOLR through the new web application, Landslide Reporter.
-					</p>
-					
-					<a href = "https://maps.nccs.nasa.gov/arcgis/apps/webappviewer/index.html?id=824ea5864ec8423fb985b33ee6bc05b7">
+			<a href = "https://maps.nccs.nasa.gov/arcgis/apps/webappviewer/index.html?id=824ea5864ec8423fb985b33ee6bc05b7">
 						<div class = "LRsmbanner" style = "background: url('images/bannersmall_LV.png') center center / cover no-repeat;">
 							<div class = "LRsmbanner-overlay">
 								<p class = "LRsmbanner-title">LANDSLIDE VIEWER: Visualize the Data</p>
 							</div>
 						</div>
 					</a>
-					<p>See all approved landslide reports, Global Landslide Catalog data, and other information on the COOLR world map. 
-					Select different layers on the map to categorize the reports and view side-by-side with environmental information. 
-					Download COOLR from the viewer for more in-depth analysis.</p>
+					
 					
 					<div class = "LRsmbanner" style = "background: url('images/bannersmall_LR.png') center center / cover no-repeat;">
 						<div class = "LRsmbanner-overlay">
@@ -176,25 +167,20 @@
 									LANDSLIDE REPORTER: Submit a Landslide<br>Coming early 2018</p>
 						</div>
 					</div>
-					<p>The citizen science submission portal for COOLR. Add information about the location, date, type of landslide, 
-					and other details about the event using <i>Landslide Reporter</i>'s submission tool, and enhance our global picture of landslides.
+			<br>
+			<div class="twocol"> <!-- Two-column layout -->
+				<div class="urone"> <!-- begin left column in wrapper -->			
+					
+					
+					<h2>What is COOLR?</h2>
+					<p>The Cooperative Open Landslide Inventory (COOLR) is a worldwide database of landslide events. It currently includes NASA’s 
+					Global Landslide Catalog (GLC) and citizen science data, and will soon allow for other landslide inventories. COOLR can be accessed 
+					on Landslide Viewer, and citizen scientists can contribute to COOLR through the new web application, Landslide Reporter.
 					</p>
 					
-					<h2>Learn more</h2>	
+					<h3>Learn more</h3>	
 					<p>Browse the Get Started page to learn what you can do with citizen science and COOLR, or read more below.</p>
-					<!-- FAQ 1 -->
-					<span class = "showhide keystaff_header fnt_bold dsply_blck collapsible-heading">
-						<a href = "#" class = "collapsible-heading-toggle">
-							<span class = "collapsible-heading-status">Hide</span>
-							Where do we record the landslides?
-						</a>
-					</span>
-					<ul class = "type-list-none collapsible-content collapsible-content-collapsed" aria-hidden = "true">
-						<li>We are recording all landslide events in the Cooperative Open Online Landslide Repository (COOLR), 
-						a central location for all open data on landslides. Currently, COOLR hosts reports made by Landslide Reporter 
-						and all reports in the Global Landslide Catalog, a database of rainfall-triggered landslides since 2007.
-					</ul> <!-- end of FAQ 1 -->
-					<br>
+					
 					<!-- FAQ 2 -->
 					<span class = "showhide keystaff_header fnt_bold dsply_blck collapsible-heading">
 						<a href = "#" class = "collapsible-heading-toggle">
@@ -255,6 +241,34 @@
 						Every landslide report made by you is another step towards a more predictable future!
                         
 					</ul> <!-- end of FAQ 4 -->
+					<br>
+					
+					<!-- FAQ 1 -->
+					<span class = "showhide keystaff_header fnt_bold dsply_blck collapsible-heading">
+						<a href = "#" class = "collapsible-heading-toggle">
+							<span class = "collapsible-heading-status">Hide</span>
+							How do I add landslide events to COOLR? (citizen science)
+						</a>
+					</span>
+					<ul class = "type-list-none collapsible-content collapsible-content-collapsed" aria-hidden = "true">
+						<li>Landslide Reporter is the submission portal for COOLR. When you find a landslide event through a news article or
+						in-person, you can open the web application to add information about the location, date, type of landslide, 
+						and other details about the event in Landslide Reporter. See the <a href = "getstarted.html">Get Started</a> page to start contributing to COOLR.
+					</p>
+					</ul> <!-- end of FAQ 1 -->
+					<br>
+					<!-- FAQ 6 -->
+					<span class = "showhide keystaff_header fnt_bold dsply_blck collapsible-heading">
+						<a href = "#" class = "collapsible-heading-toggle">
+							<span class = "collapsible-heading-status">Hide</span>
+							Where can I see all landslides in COOLR?
+						</a>
+					</span>
+					<ul class = "type-list-none collapsible-content collapsible-content-collapsed" aria-hidden = "true">
+						<li>All approved landslide reports, Global Landslide Catalog data, and other COOLR data appears in <a href = "https://maps.nccs.nasa.gov/arcgis/apps/webappviewer/index.html?id=824ea5864ec8423fb985b33ee6bc05b7">Landslide Viewer.</a> 
+						You can select different layers on the map to categorize the reports and view side-by-side with environmental information. 
+						There is also a link to download the Global Landslide Catalog for in-depth analysis.
+					</ul> <!-- end of FAQ 6 -->
 					<br>
 					<!-- FAQ 5 -->
 					<span class = "showhide keystaff_header fnt_bold dsply_blck collapsible-heading">
