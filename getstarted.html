@@ -126,6 +126,24 @@
 				li.navbarLR a:hover {
 					color: #DCDCDD;
 				}
+				
+				table th{
+					background-color: #5AB1BB;
+					color: #FFF;
+					padding: 6px;
+				}
+				
+				table tr:nth-child(even) {
+					background-color: #EAFBFD;
+				}
+				
+				table tr:nth-child(odd) {
+					background-color: #BEECF0;
+				}
+				
+				table td {
+					padding: 6px;
+				}
 			</style>
 			
 			<script>
@@ -194,7 +212,7 @@
 							<li><a href = "#usingLRweb">Using Landslide Reporter on the web</a>
 							<li><a href = "#usingLRphone">Using Landslide Reporter on your mobile device</a>
 						</ul>
-						<a id = "accessingLR"></a><h3>Accessing the Application</h3>
+						<a id = "accessingLR"></a><h2>Accessing the Application</h2>
 						<p>Landslide Reporter can be accessed by either your computer’s or your mobile phone’s internet browser. You will need a Facebook account or Google+ account to log in. Logging in will allow you to access your previous submissions. Your credentials will not be publicly linked to your reports in the online database.
 						</p>
 						<p>Upon signing in, you will be presented with the Terms and Conditions of using Landslide Reporter. Closing the box indicates you have accepted the Terms and Conditions.
@@ -202,7 +220,7 @@
 						<p>Once logged in, your browser may ask you to use your location. Click “Accept” or “Allow” so that the browser can pinpoint your current location, making it easier for you to submit local events.
 						</p>
 						
-						<a id = "usingLRweb"></a><h3>Using Landslide Reporter on the web</h3>
+						<a id = "usingLRweb"></a><h2>Using Landslide Reporter on the web</h2>
 						<img src = "images/LR Web Schematic.png" alt = "Landslide Reporter screen">
 						<br><br><i>Main screen</i>
 						<ol>
@@ -216,7 +234,7 @@
 						<br><br>
 						
 						<br><br>						
-						<a id = "usingLRphone"></a><h3>Using Landslide Reporter on your mobile device</h3>
+						<a id = "usingLRphone"></a><h2>Using Landslide Reporter on your mobile device</h2>
 						<img src = "images/LR Mobile Schematic.png" alt = "Landslide Reporter screen on mobile">
 						<br><br><i>Main screen</i>
 						<ol>
@@ -252,7 +270,7 @@
 							<li><a href = "#extresources">External resources</a></li>
 						</ul>
 						
-						<a id = "howtoguides"></a><h3>How-to guides</h3>
+						<a id = "howtoguides"></a><h2>How-to guides</h2>
 						<p>Are you ready to contribute to COOLR? Reading the Landslide Reporter’s Guide below will help you make a better submission to the database. Browse through basic information on landslides, hone your skills at identifying landslides, step through the report process, and follow tips on pinpointing a landslide’s location.</p>
 						
 						<i>Landslide Primer</i>
@@ -267,7 +285,7 @@
 						<i>Tips to Pinpoint Landslide Location from a News Article</i>
 						<p>When reporting landslides from a news article, it may be challenging to find exactly where the landslide occurred. This guide gives suggestions on how to use keywords to hone in on the location, discusses location accuracy, and shows how to use Google Maps or Google Earth to your advantage.</p>
 						
-						<a id = "extresources"></a><h3>External resources</h3>
+						<a id = "extresources"></a><h2>External resources</h2>
 						<i>More general landslide information</i>
 						<ol>
 							<li><a href = "https://pubs.usgs.gov/fs/2004/3072/fs-2004-3072.html">Landslide Types and Processes (USGS)</a>
@@ -300,10 +318,82 @@
 							<li><a href = "#accessingLV">Accessing the application</a></li>
 							<li><a href = "#usingLVweb">Using Landslide Viewer on the web</a></li>
 							<li><a href = "#usingLVmobile">Using Landslide Viewer on your mobile device</a></li>
-							<li><a href = "#LVlayerlist">COOLR data displays in Layer List</a></li>
+							<li><a href = "#LVlayerlist">COOLR data analysis in Layer List</a></li>
 							<li><a href = "#LVtimeslider">Using the Time Slider</a></li>
 						</ul>
+						<a id = "accessingLV"></a><h2>Accessing the application</h2>
+						<p>Landslide Viewer can be accessed by either your computer’s or your mobile phone’s internet browser. Upon loading the page, you will be presented with the Terms and Conditions of using Landslide Viewer. Checking the box “I agree to the above terms and conditions” will grant you access to the application.</p>
+						<p>Once logged in, your browser may ask you to use your location. Click “Accept” or “Allow” so that the browser can pinpoint your current location, making it easier for you to submit local events.</p>
+
+						<a id = "usingLVweb"></a><h2>Using Landslide Viewer on the web</h2>
+						<img src = "images/LV Web Schematic.png" alt = "Landslide Viewer screen">
+						<br><br>
+						<i>Main Screen</i>
+						<ol>
+							<li><b>Map navigation: </b>Zoom and search for locations.
+							<li><b>Location search: </b>Find the name of a location on the map.
+							<li><b>Measurement: </b>Measure area, measure distance, and find geographic coordinates.
+							<li><b>Summarize: </b>
+							<li><b>Draw: </b>Opens a menu with tools to draw points, lines, shapes, and add text to the map.
+							<li><b>Download: </b>Opens a new page with the link to download the Global Landslide Catalog.
+							<li><b>Points: </b>Landslide events. Clicking will open details about a particular event.
+							<li><b>Bookmark: </b>Your saved/bookmarked locations and the option to add/delete bookmarks. 
+							<li><b>Basemap Gallery: </b>Different options for the map, like satellite imagery, OpenStreetMap roads, terrain, etc.
+							<li><b>Layer List: </b>Select/deselect what to display on the map, like the database points and polygons, models for flood and landslide risk, etc.
+							<li><b>Time Slider: </b>: Pan through landslide events chronologically. A “Time Aware” layer must be selected from Layer List for the Time Slider to be available.
+							<li><b>Print: </b>Save your current map as a downloadable and printable file on your computer.
+							<li><b>About: </b>Information about ArcGIS.
+						</ol>
+						<a id = "usingLVmobile"></a><h2>Using Landslide Viewer on your mobile device</h2>
+						<img src = "images/LV Mobile Schematic.png" alt = "Landslide Viewer screen">
+						<br><br>
+						<i>Main Screen</i>
+						<ol>
+							<li><b>Map navigation: </b>Zoom and search for locations.
+							<li><b>Location search: </b>Find the name of a location on the map.
+							<li><b>Measurement: </b>Measure area, measure distance, and find geographic coordinates.
+							<li><b>Summarize: </b>
+							<li><b>Draw: </b>Opens a menu with tools to draw points, lines, shapes, and add text to the map.
+							<li><b>Download: </b>Opens a new page with the link to download the Global Landslide Catalog.
+							<li><b>Points: </b>Landslide events. Clicking will open details about a particular event.
+							<li><b>Bookmark: </b>Your saved/bookmarked locations and the option to add/delete bookmarks. 
+							<li><b>Basemap Gallery: </b>Different options for the map, like satellite imagery, OpenStreetMap roads, terrain, etc.
+							<li><b>Layer List: </b>Select/deselect what to display on the map, like the database points and polygons, models for flood and landslide risk, etc.
+							<li><b>Time Slider: </b>: Pan through landslide events chronologically. A “Time Aware” layer must be selected from Layer List for the Time Slider to be available.
+							<li><b>Menu: </b>Opens more Landslide Viewer options.
+							<li><b>Print: </b>Save your current map as a downloadable and printable file on your computer.
+							<li><b>About: </b>Information about ArcGIS.
+						</ol>
+						<a id = "LVlayerlist"></a><h2>COOLR data analysis options in Layer List</h2>
+						<p>The data from the Cooperative Open Online Landslide Repository (COOLR) can be colored and displayed in several ways on the map. These are the available options in Layer List.</p>
+						<table>
+							<tr>
+								<th>Data Type</th>
+								<th>Description</th>
+							</tr>
+							<tr>
+								<td>Landslide Points/Polygons</td>
+								<td>All points or polygons are marked on the map.</td>
+							</tr>
+							<tr>
+								<td>Category</td>
+								<td>All points are colored by the type of landslide (e.g. mudslide, rock fall, etc.)</td>
+							</tr>
+							<tr>
+								<td>Fatalities</td>
+								<td>All points are sized by how many fatalities occurred because of the event.</td>
+							</tr>
+							<tr>
+								<td>Time Aware</td>
+								<td>The points can be played in chronological order in the Time Slider.
+							</tr>
+						</table>
 						
+						<a id = "LVtimeslider"></a><h2>Using the Time Slider</h2>
+						<img src = "images/LV timeslider.png" alt = "Time Slider" width = "400px">
+						<br><br>
+						<p>The Time Slider allows you to pan through landslide events chronologically. <b>To use the tool, a Time Aware layer must be selected from the Layer List.</b></p>
+						<p>Once a Time Aware layer is selected, click the Time Slider icon in the menu to open the Time Slider panel. You can press “play” to automatically advance the sliders, change the range of dates, and change the speed of the sliders.</p>
 						
 					</div> <!-- end Navigating Landslide Viewer -->
 					
@@ -317,8 +407,7 @@
 							<li>Kirschbaum, D.B., Stanley, T., & Zhou, Y. (2015). Spatial and temporal analysis of a global landslide catalog. Geomorphology, 249, 4-15. doi:10.1016/j.geomorph.2015.03.016
 							<li>Kirschbaum, D.B., Adler, R., Hong, Y., Hill, S., & Lerner-Lam, A. (2010). A global landslide catalog for hazard applications: method, results, and limitations. Natural Hazards, 52, 561-575. doi:10.1007/s11069-009-9401-4
 						</ul>
-						<br><br>
-						<p>Any questions about citing the Global Landslide Catalog can be directed towards Dalia Kirschbaum, dalia.b.kirschbaum@nasa.gov. 
+						<p>Any questions about citing the Global Landslide Catalog can be directed towards <a href = "mailto:dalia.b.kirschbaum@nasa.gov">Dalia Kirschbaum</a>. 
 						</p>
 					</div> <!-- end LVdownload div -->
 					
