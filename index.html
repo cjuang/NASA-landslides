@@ -57,7 +57,7 @@
 					width: 720px;
 					margin: 0;
 					object-fit: contain;
-					background: url('images/banner-fatalmap.png') center center / cover no-repeat;
+					background: url('images/banner-fatalmap.png') center top / cover no-repeat;
 				}
 				#LRbanner-overlay{
 					width: 100%;
@@ -81,33 +81,32 @@
 					text-align: center;
 				}
 				div.LRsmbanner {
-					position: relative;
+					display: inline-block;
 					margin: 0;
 					padding: 0;
-					width: 475px;
-					height: auto;
-					border-color: solid #5AB1BB;
+					width: 300px;
+					height: 160px;
 					border-radius: 12px;
 				}
 				div.LRsmbanner-overlay {
-					position: relative; 
+					display: inline-block;
+					position: relative;
+					height: 100%;
 					margin-bottom: 0px;
 					bottom: 0;
 					background-color:rgba(31,129,138,0.6);
+					// border: 1px solid #233D4D;
 					border-radius: 12px;
 				}
 				.LRsmbanner-title {
 					font-size: 18px;
-					font-weight: medium;
 					font-family: 'PT Serif', serif;
 					color: #fff;
 					padding: 15px;
-					
 				}
 				ul.navbarLR {
 					bottom: 0;
 					padding-right: 5px;
-					margin-right: 20px;
 					overflow: hidden;
 				}
 				li.navbarLR {
@@ -152,21 +151,22 @@
 				</div>
 				
 			</div> <!-- end Banner -->
-			<a href = "https://maps.nccs.nasa.gov/arcgis/apps/webappviewer/index.html?id=824ea5864ec8423fb985b33ee6bc05b7">
-						<div class = "LRsmbanner" style = "background: url('images/bannersmall_LV.png') center center / cover no-repeat;">
-							<div class = "LRsmbanner-overlay">
-								<p class = "LRsmbanner-title">LANDSLIDE VIEWER: Visualize the Data</p>
-							</div>
-						</div>
-					</a>
-					
-					
-					<div class = "LRsmbanner" style = "background: url('images/bannersmall_LR.png') center center / cover no-repeat;">
+			<div>
+				<a href = "https://maps.nccs.nasa.gov/arcgis/apps/webappviewer/index.html?id=824ea5864ec8423fb985b33ee6bc05b7">
+					<div class = "LRsmbanner" style = "background: url('images/bannersmall_LV.png') center center / cover no-repeat;">
 						<div class = "LRsmbanner-overlay">
-							<p class = "LRsmbanner-title"><img src = "images/LRlogo.png" width = "42" style="float:left; padding-right:10px;">
-									LANDSLIDE REPORTER: Submit a Landslide<br>Coming early 2018</p>
+							<p class = "LRsmbanner-title">LANDSLIDE VIEWER: Visualize the Data</p>
 						</div>
 					</div>
+				</a>
+				
+				<div class = "LRsmbanner" style = "background: url('images/bannersmall_LR.png') center center / cover no-repeat;">
+					<div class = "LRsmbanner-overlay">
+						<p class = "LRsmbanner-title"><img src = "images/LRlogo.png" width = "42" style="float:left; padding-right:10px;">
+								LANDSLIDE REPORTER: Submit a Landslide<br>Coming early 2018</p>
+					</div>
+				</div>
+			</div>
 			<br>
 			<div class="twocol"> <!-- Two-column layout -->
 				<div class="urone"> <!-- begin left column in wrapper -->			
@@ -294,7 +294,7 @@
 				</p>
 				
 				<h2>Contact</h2>
-				<p>If you need help beyond the Get Started page or experience a bug, feel free to email
+				<p>If you need help beyond the Get Started page or experience a bug, feel free to email 
 				<a href = "mailto:landslide_support@nccs.nasa.gov">landslide_support@nccs.nasa.gov</a>.
 				</p>
 				<h3>Project Managers</h3>
