@@ -57,7 +57,7 @@
 					width: 720px;
 					margin: 0;
 					object-fit: contain;
-					background: url('images/banner-fatalmap.png') center center / cover no-repeat;
+					background: url('images/banner-fatalmap.png') center top / cover no-repeat;
 				}
 				#LRbanner-overlay{
 					width: 100%;
@@ -73,41 +73,51 @@
 					line-height: 98%;
 					text-align: center;
 				}
-				p#LRbanner-subtitle {
-					font-size: 18px;
-					font-weight: normal;
+				div.LRsmbanner {
+					padding: 0;
+					width: 280px;
+					height: auto;
+					border-radius: 12px;
+				}
+				
+				div#LRbannerbuttons {
+					position: absolute;
+					top: 195px;
+					left: 400px;
+				}
+				
+				div.LRsmbanner-overlay {
+					position: relative;
+					height: 100%;
+					width: 100%;
+					background-color:rgba(31,129,138,0.4);
+					border: 1px solid #233D4D;
+					border-radius: 12px;
+				}
+				
+				div.LRsmbanner-overlay:hover {
+					background-color:rgba(31,129,138,0.6);
+				}
+				.LRsmbanner-toptitle {
+					position: absolute;
+					top: 155px;
+					left: 280px;
+					font-size: 20px;
 					font-family: 'PT Serif', serif;
 					color: #fff;
-					text-align: center;
-				}
-				div.LRsmbanner {
-					position: relative;
-					margin: 0;
-					padding: 0;
-					width: 475px;
-					height: auto;
-					border-color: solid #5AB1BB;
-					border-radius: 12px;
-				}
-				div.LRsmbanner-overlay {
-					position: relative; 
-					margin-bottom: 0px;
-					bottom: 0;
-					background-color:rgba(31,129,138,0.6);
-					border-radius: 12px;
+					text-shadow: 1px 1px 6px #000
 				}
 				.LRsmbanner-title {
-					font-size: 18px;
-					font-weight: medium;
-					font-family: 'PT Serif', serif;
+					font-size: 16px;
 					color: #fff;
-					padding: 15px;
-					
+					padding-top: 15px;
+					padding-left: 15px;
+					padding-right: 15px;
+					padding-bottom: 0px;
 				}
 				ul.navbarLR {
 					bottom: 0;
 					padding-right: 5px;
-					margin-right: 20px;
 					overflow: hidden;
 				}
 				li.navbarLR {
@@ -146,31 +156,36 @@
 						<li class = "navbarLR"><a href = "#">Home</a></li>
 						<li class = "navbarLR"><a href = "getstarted.html">Get Started</a></li>
 						<li class = "navbarLR"><a href = "publications.html">Publications</a></li>
-						<li class = "navbarLR" style = "float: right; background-color: #5AB1BB"><a href = "https://maps.nccs.nasa.gov/arcgis/apps/webappviewer/index.html?id=824ea5864ec8423fb985b33ee6bc05b7">Landslide Viewer</a></li>
+						<!-- <li class = "navbarLR" style = "float: right; background-color: #5AB1BB"><a href = "https://maps.nccs.nasa.gov/arcgis/apps/webappviewer/index.html?id=824ea5864ec8423fb985b33ee6bc05b7">Landslide Viewer</a></li>
 						<li class = "navbarLR" style = "float: right; background-color: #5AB1BB"><a href = "#">Landslide Reporter</a></li>
+						-->
 					</ul> <!-- end Navigation -->
 				</div>
 				
 			</div> <!-- end Banner -->
-			<a href = "https://maps.nccs.nasa.gov/arcgis/apps/webappviewer/index.html?id=824ea5864ec8423fb985b33ee6bc05b7">
-						<div class = "LRsmbanner" style = "background: url('images/bannersmall_LV.png') center center / cover no-repeat;">
-							<div class = "LRsmbanner-overlay">
-								<p class = "LRsmbanner-title">LANDSLIDE VIEWER: Visualize the Data</p>
-							</div>
-						</div>
-					</a>
-					
-					
-					<div class = "LRsmbanner" style = "background: url('images/bannersmall_LR.png') center center / cover no-repeat;">
+			
+			<img id = "LRbannerad" src = "images/bannersmall_process.png">
+			<p class = "LRsmbanner-toptitle">Capturing as many landslides as possible, worldwide</p>
+			<div id = "LRbannerbuttons"> <!-- buttons -->
+				<a href = "https://maps.nccs.nasa.gov/arcgis/apps/webappviewer/index.html?id=824ea5864ec8423fb985b33ee6bc05b7">
+					<div class = "LRsmbanner">
 						<div class = "LRsmbanner-overlay">
-							<p class = "LRsmbanner-title"><img src = "images/LRlogo.png" width = "42" style="float:left; padding-right:10px;">
-									LANDSLIDE REPORTER: Submit a Landslide<br>Coming early 2018</p>
+							<p class = "LRsmbanner-title"><img src = "images/LVlogo.png" width = "42" style="float:left; padding-right:10px;">
+							LANDSLIDE VIEWER: <br>Look at the Data</p>
 						</div>
 					</div>
-			<br>
+				</a>
+				<br>
+				<div class = "LRsmbanner">
+					<div class = "LRsmbanner-overlay">
+						<p class = "LRsmbanner-title"><img src = "images/LRlogo.png" width = "42" style="float:left; padding-right:10px;">
+						LANDSLIDE REPORTER: <br>Submit a Landslide (TBD)</p>
+					</div>
+				</div>
+			</div> <!-- end buttons -->
+			<br><br>
 			<div class="twocol"> <!-- Two-column layout -->
 				<div class="urone"> <!-- begin left column in wrapper -->			
-					
 					
 					<h2>What is COOLR?</h2>
 					<p>The Cooperative Open Landslide Inventory (COOLR) is a worldwide database of landslide events. It currently includes NASA’s 
@@ -294,7 +309,7 @@
 				</p>
 				
 				<h2>Contact</h2>
-				<p>If you need help beyond the Get Started page or experience a bug, feel free to email
+				<p>If you need help beyond the Get Started page or experience a bug, feel free to email 
 				<a href = "mailto:landslide_support@nccs.nasa.gov">landslide_support@nccs.nasa.gov</a>.
 				</p>
 				<h3>Project Managers</h3>
