@@ -137,6 +137,10 @@
 				table td {
 					padding: 6px;
 				}
+				
+				p, ul, ol, li, i, b {
+				font-size: 13px;
+				}
 			</style>
 			
 			<script>
@@ -160,7 +164,7 @@
 				<div id = "LRbanner-bg"> 
 					<div id = "LRbanner-overlay"> 
 						<p id = "LRbanner-title">
-								Cooperative Open Online Landslide Repository (COOLR)
+								LANDSLIDES @ NASA
 						</p>
 					</div>
 					
@@ -298,7 +302,7 @@
 							<li><a href = "http://file.dnr.wa.gov/publications/ger_homeowners_guide_landslides.pdf">Homeowners' Guide to Landslides (Washington GS and Oregno DOGAMI)</a>
 						</ol>
 						
-						<i>Landslide websites</i>
+						<i>Relevant websites</i>
 						<ol>
 							<li><a href = "https://landslides.usgs.gov/">US Geological Survey (USGS) Landslide Hazards Program</a>
 							<li><a href = "https://pmm.nasa.gov/applications/landslides">NASA Precipitation Measurement Missions (PMM) Landslide Applications</a>
@@ -402,11 +406,12 @@
 						<a id = "referenceinfo"></a><h2>Referencing the data</h2>
 						<p>The Cooperative Open Online Landslide Repository (COOLR) can be downloaded from Landslide Viewer by clicking on the link “Download the full Landslide Catalog” at the top of the application. A new window will open with the information for downloading the GLC and the option to save it to your computer as a .gdb file.
 						</p>
+						<h3>Global Landslide Catalog (GLC)</h3>
 						<p>If you use the Global Landslide Catalog (GLC) in your research publication, we request that you reference the GLC database using the publications below:
 						</p>
 						<ul>
-							<li>Kirschbaum, D.B., Stanley, T., & Zhou, Y. (2015). Spatial and temporal analysis of a global landslide catalog. Geomorphology, 249, 4-15. doi:10.1016/j.geomorph.2015.03.016
-							<li>Kirschbaum, D.B., Adler, R., Hong, Y., Hill, S., & Lerner-Lam, A. (2010). A global landslide catalog for hazard applications: method, results, and limitations. Natural Hazards, 52, 561-575. doi:10.1007/s11069-009-9401-4
+							<li>Kirschbaum, D.B., Stanley, T., & Zhou, Y. (2015). Spatial and temporal analysis of a global landslide catalog. <i>Geomorphology</i>, 249, 4-15. doi:10.1016/j.geomorph.2015.03.016
+							<li>Kirschbaum, D.B., Adler, R., Hong, Y., Hill, S., & Lerner-Lam, A. (2010). A global landslide catalog for hazard applications: method, results, and limitations.<i> Natural Hazards</i>, 52, 561-575. doi:10.1007/s11069-009-9401-4
 						</ul>
 						</p>
 						
@@ -422,7 +427,7 @@
 							</a>
 						</span>
 						<ul class = "type-list-none collapsible-content collapsible-content-collapsed" aria-hidden = "true">
-							If the submission hasn’t been checked by our team yet, you may edit it under My Submissions. Click on the report you want to edit, and click the pencil icon or trash icon in the top right-hand corner to edit or delete the report.
+							<li>If the submission hasn’t been checked by our team yet, you may edit it under My Submissions. Click on the report you want to edit, and click the pencil icon or trash icon in the top right-hand corner to edit or delete the report.
 						</ul>
 						
 						<span class = "showhide keystaff_header fnt_bold dsply_blck collapsible-heading">
@@ -431,7 +436,7 @@
 							</a>
 						</span>
 						<ul class = "type-list-none collapsible-content collapsible-content-collapsed" aria-hidden = "true">
-							Yes, all reports submitted through Landslide Reporter are quality-checked on a best effort basis by members of the team at NASA Goddard Space Flight Center.
+							<li>Yes, all reports submitted through Landslide Reporter are quality-checked on a best effort basis by members of the team at NASA Goddard Space Flight Center.
 						</ul>
 						
 						<span class = "showhide keystaff_header fnt_bold dsply_blck collapsible-heading">
@@ -440,9 +445,21 @@
 							</a>
 						</span>
 						<ul class = "type-list-none collapsible-content collapsible-content-collapsed" aria-hidden = "true">
-							No, we do not store any personally identifiable information nor do we make that information public. 
+							<li>No, we do not store any personally identifiable information nor do we make that information public. 
 						</ul>
 						
+						<span class = "showhide keystaff_header fnt_bold dsply_blck collapsible-heading">
+							<a href = "#" class = "collapsible-heading-toggle">
+							I used the Global Landslide Catalog (GLC) in my research. How do I cite it?
+							</a>
+						</span>
+						<ul class = "type-list-none collapsible-content collapsible-content-collapsed" aria-hidden = "true">
+							<li>If you use the Global Landslide Catalog (GLC) in your research publication, we request that you reference the GLC database using the publications below:
+							<ul>
+								<li>Kirschbaum, D.B., Stanley, T., & Zhou, Y. (2015). Spatial and temporal analysis of a global landslide catalog. <i>Geomorphology</i>, 249, 4-15. doi:10.1016/j.geomorph.2015.03.016
+								<li>Kirschbaum, D.B., Adler, R., Hong, Y., Hill, S., & Lerner-Lam, A. (2010). A global landslide catalog for hazard applications: method, results, and limitations. <i>Natural Hazards</i>, 52, 561-575. doi:10.1007/s11069-009-9401-4
+							</ul>
+						</ul>
 						
 					</div> <!-- end LRfaq div -->
 					
@@ -457,14 +474,7 @@
 					<a class = "LRtab" onclick = "openLRinfo(event, 'LVdownload')">Downloading the Catalog</a>
 					<a class = "LRtab" onclick = "openLRinfo(event, 'LRfaq')">Frequently Asked Questions</a>
 					<br>
-					<h2>Data Citation</h2>
-					<h3>GLC Data Citation</h3>
-					<p>The NASA’s Global Landslide Catalog data is described and can be referenced by the following publications:</p>
-					<ul>
-						<li>Kirschbaum, D.B., Stanley, T., & Zhou, Y. (2015). Spatial and temporal analysis of a global landslide catalog.<i> Geomorphology, 249</i>, 4-15. doi:<a href = "https://doi.org/10.1016/j.geomorph.2015.03.016">10.1016/j.geomorph.2015.03.016</a>
-						<li>Kirschbaum, D.B., Adler, R., Hong, Y., Hill, S., & Lerner-Lam, A. (2010). A global landslide catalog for hazard applications: method, results, and limitations. <i>Natural Hazards, 52,</i> 561-575. <a href = "https://doi.org/10.1007/s11069-009-9401-4">doi:10.1007/s11069-009-9401-4</a>
-					</ul>
-					</p>
+					
 					<h2>Contact</h2>
 					<p>For any questions related to this system, please contact 
 					<a href = "mailto:landslide_support@nccs.nasa.gov">landslide_support@nccs.nasa.gov</a>.
