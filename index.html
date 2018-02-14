@@ -47,8 +47,6 @@
 **** START MAIN CONTENT HERE. ****
 **********************************
 -->	<!-- Welcome to Landslide Reporter! -->
-			<!-- import font -->
-			<link href="https://fonts.googleapis.com/css?family=PT+Serif" rel="stylesheet">
 			
 			<!-- CSS Styling -->
 			<style>
@@ -66,9 +64,8 @@
 					text-shadow: 1px 1px 6px #000;
 				}
 				p#LRbanner-title {
-					font-size: 26px;
+					font-size: 28px;
 					font-weight: normal;
-					font-family: 'PT Serif', serif;
 					color: #fff;
 					line-height: 98%;
 					text-align: center;
@@ -77,7 +74,6 @@
 					padding: 0;
 					width: 280px;
 					height: auto;
-					//border-radius: 12px;
 				}
 				
 				div#LRbannerbuttons {
@@ -92,7 +88,6 @@
 					width: 100%;
 					background-color:rgba(90,176,186,0.5);
 					border-bottom: 1px solid #dcdcdd;
-					//border-radius: 12px;
 				}
 				
 				div.LRsmbanner-overlay:hover {
@@ -103,7 +98,6 @@
 					top: 155px;
 					left: 280px;
 					font-size: 20px;
-					font-family: 'PT Serif', serif;
 					color: #fff;
 					text-shadow: 1px 1px 6px #000
 				}
@@ -161,9 +155,6 @@
 						<li class = "navbarLR"><a href = "getstarted.html">Get Started</a></li>
 						<li class = "navbarLR"><a href = "publications.html">Publications</a></li>
 						<li class = "navbarLR"><a href = "privacy.html">Privacy</a></li>
-						<!-- <li class = "navbarLR" style = "float: right; background-color: #5AB1BB"><a href = "https://maps.nccs.nasa.gov/arcgis/apps/webappviewer/index.html?id=824ea5864ec8423fb985b33ee6bc05b7">Landslide Viewer</a></li>
-						<li class = "navbarLR" style = "float: right; background-color: #5AB1BB"><a href = "#">Landslide Reporter</a></li>
-						-->
 					</ul> <!-- end Navigation -->
 				</div>
 				
@@ -172,29 +163,31 @@
 			<img id = "LRbannerad" src = "images/bannersmall_process.png?3">
 			<p class = "LRsmbanner-toptitle">Building a greater picture of landslides with every report made.<span style = "font-family: Arial, Helvetica, sans-serif; font-size: 14px;"><br>Home of the Cooperative Open Online Landslide Repository (COOLR)</span></p>
 			<div id = "LRbannerbuttons"> <!-- buttons -->
-				<a href = "https://maps.nccs.nasa.gov/arcgis/apps/webappviewer/index.html?id=824ea5864ec8423fb985b33ee6bc05b7">
+				<a href = "https://maps.nccs.nasa.gov/arcgis/apps/webappviewer/index.html?id=824ea5864ec8423fb985b33ee6bc05b7" target="_blank">
 					<div class = "LRsmbanner">
 						<div class = "LRsmbanner-overlay">
-							<p class = "LRsmbanner-title"><img src = "images/LVlogo.png" width = "42" style="float:left; padding-right:10px;">
+							<p class = "LRsmbanner-title"><img src = "images/LVlogo.png?2" width = "42" style="float:left; padding-right:10px;">
 							<span style = "font-weight: bold;">LANDSLIDE VIEWER</span> <br>Look at the Data</p>
 						</div>
 					</div>
 				</a>
-				<div class = "LRsmbanner">
-					<div class = "LRsmbanner-overlay">
-						<p class = "LRsmbanner-title"><img src = "images/LRlogo.png" width = "42" style="float:left; padding-right:10px;">
-						<span style = "font-weight: bold;">LANDSLIDE REPORTER</span> <br>Submit a Landslide (BETA)</p>
+				<a href = "https://maps.nccs.nasa.gov/apps/landslide_reporter/" target="_blank">
+					<div class = "LRsmbanner">
+						<div class = "LRsmbanner-overlay">
+							<p class = "LRsmbanner-title"><img src = "images/LRlogo.png?2" width = "42" style="float:left; padding-right:10px;">
+							<span style = "font-weight: bold;">LANDSLIDE REPORTER</span> <br>Submit a Landslide (BETA)</p>
+						</div>
 					</div>
-				</div>
+				</a>
 			</div> <!-- end buttons -->
 			<br><br>
 			<div class="twocol"> <!-- Two-column layout -->
 				<div class="urone"> <!-- begin left column in wrapper -->			
 					
 					<h2>What is COOLR?</h2>
-					<p>The Cooperative Open Landslide Inventory (COOLR) is a worldwide database of landslide events. It currently includes NASA’s Global 
+					<p>The Cooperative Open Online Landslide Repository (COOLR) is a worldwide database of landslide events. It currently includes NASA’s Global 
 					Landslide Catalog (GLC) and other landslide reports contributed by citizen scientists. In the future, COOLR will allow for other 
-					landslide inventories to be included. COOLR currently has two components: Landslide Viewer provides a tool to visualize and download 
+					landslide inventories to be included. <br><br>COOLR currently has two components: Landslide Viewer provides a tool to visualize and download 
 					the data; and Landslide Reporter is a new web application that allows citizen scientists to add their own reports to the open database. 
 					</p>
 					
@@ -307,21 +300,8 @@
 				
 				<h2>Contact</h2>
 				<p>For any questions related to this system, please contact 
-				<a href = "mailto:landslide_support@nccs.nasa.gov">landslide_support@nccs.nasa.gov</a>.
+				<a href = "mailto:landslide_support@nccs.nasa.gov?subject=[LANDSLIDES] ">landslide_support@nccs.nasa.gov</a>.
 				</p>
-				<!-- <h3>Project Managers</h3>
-				<a href = "https://science.gsfc.nasa.gov/sed/bio/caroline.juang">Caroline Juang</a>
-				<br><a href = "https://science.gsfc.nasa.gov/sed/bio/dalia.b.kirschbaum">Dr. Dalia Kirschbaum</a>
-				<br><a href = "https://science.gsfc.nasa.gov/sed/bio/thomas.a.stanley">Thomas Stanley</a>
-				<br><br>
-				
-				<h3>With acknowledgments to:</h3>
-				Jim Shute
-				<br>Laura Carriere
-				<br>Dan Duffy
-				<br>Neh Patel
-				-->
-				
 				
 				</div> <!-- end right column in wrapper -->
 			</div> <!-- end two-column layout -->
