@@ -87,7 +87,7 @@
 				.LRcontent {
 					display: none;
 				}
-				.LRcontent#LRprocess {
+				.LRcontent#COOLRgetstarted {
 					display: block;
 				}
 				ul.navbarLR {
@@ -125,17 +125,19 @@
 				
 				table tr:nth-child(even) {
 					background-color: #EAFBFD;
+					border: 3px solid #fff;
 				}
 				
 				table tr:nth-child(odd) {
-					background-color: #BEECF0;
+					background-color: #EAFBFD;
+					border: 3px solid #fff;
 				}
 				
 				table td {
 					padding: 6px;
 				}
 				
-				p, ul, ol, li, i, b {
+				p, ul, ol, li, i, b, th, td {
 				font-size: 13px;
 				}
 			</style>
@@ -180,6 +182,32 @@
 			<br>
 			<div class="twocol"> <!-- Two-column layout -->
 				<div class="urone"> <!-- begin left column in wrapper -->
+					<div id = "COOLRgetstarted" class = "LRcontent">
+					<h2>Get Started</h2>
+					<img src = "images/banner_getstarted.png?3" alt = "Get started with using COOLR's Landslide Viewer and Landslide Reporter">
+					<p><p>To learn more about Landslide Viewer and Landslide Reporter, use the navigation on the right side of the page and look for these sections:
+					<table>
+						<tr>
+							<th>Landslide Viewer</th>
+							<th>Landslide Reporter</th>
+						</tr>
+						<tr>
+							<td width = "230px">
+								<h3>Page Sections</h3>
+								<p><a onclick = "openLRinfo(event, 'LVuse')">Using Landslide Viewer</a></p>
+								<p><a onclick = "openLRinfo(event, 'LVdownload')">Downloading the Data</a></p>
+							</td>
+							<td width = "230px">
+								<h3>Page Sections</h3>
+								<p><a onclick = "openLRinfo(event, 'LRprocess')">How You Can Submit to COOLR</a></p>
+								<p><a onclick = "openLRinfo(event, 'LRuse')">Using Landslide Reporter</a></p>
+								<p><a onclick = "openLRinfo(event, 'LRreport')">Make a Report</a></p>
+								</ul>
+							</td>
+						</tr>
+					</table>
+					</div> <!-- end Get Started -->
+					
 					<div id = "LRprocess" class = "LRcontent">
 						<h2>How You Can Submit to COOLR</h2>
 						<p>In order to build a more comprehensive, worldwide database of landslides, we need you! It is not an easy task and 
@@ -255,7 +283,7 @@
 						</ol>
 						<br><br>
 						
-					</div> <!-- end Navigating Landslide Reporter -->
+					</div> <!-- end Using Landslide Reporter -->
 					
 					<div id = "LRreport" class = "LRcontent">
 						<h2>Make a Report</h2>
@@ -268,49 +296,52 @@
 						<a id = "howtoguides"></a><h2>How-to guides</h2>
 						<p>Are you ready to contribute to COOLR? Reviewing the Landslide Reporter’s Guide below will help you make a better submission to the database as you browse through basic information on landslides, hone your skills at identifying landslides, step through the report process, and follow tips on pinpointing a landslide’s location.</p>
 						
-						<a href = "guides/COOLRGuide_Primer.pdf">
-						<b>Landslide Primer and Identification</b><br><img src = "images/thumb_guideprimer.png" width = "45px" style = "float:left; padding-right:10px;" target = "_blank"></a>
-						<p>The basics of landslides and why we study them. For those who are new to landslides, you can read about how to identify landslide types, from rock falls to creeps.</p>
-						<br><br>
-						<a href = "guides/COOLRGuide_Training.pdf">
-						<b>Landslide Identification Training</b><br><img src = "images/thumb_guidetraining.png" width = "45px" style = "float:left; padding-right:10px;" target = "_blank"></a>
-						<p>Train your eye to identify landslides by their type and size in preparation for submitting using Landslide Reporter. An image and description is displayed on each page and its respective size and categorizations on the following page. Use the classification and size charts from the Landslide Primer chapter to help identify.</p>
-						
-						<a href = "guides/COOLRGuide_AddEvent.pdf">
-						<b>Add a Landslide Event to COOLR</b><br><img src = "images/thumb_guideaddevent.png" width = "45px" style = "float:left; padding-right:10px;" target = "_blank"></a>
-						<p>The step-by-step instructions for submitting a landslide event to COOLR. Let this guide walk you through everything from finding a landslide to how to fill out each category, and then how to go back and review your submissions.</p>
-						<br>
-						<a href = "guides/COOLRGuide_LocationTips.pdf">
-						<b>Tips to Pinpoint Landslide Location from a News Article</b><br><img src = "images/thumb_guidelocation.png" width = "45px" style = "float:left; padding-right:10px;" target = "_blank"></a>
-						<p>When reporting landslides from a news article, it may be challenging to find exactly where the landslide occurred. This guide gives suggestions on how to use keywords to hone in on the location, discusses location accuracy, and shows how to use Google Maps or Google Earth to your advantage.</p>
-						
-						<a href = "guides/COOLRGuide_Exporting.pdf">
-						<b>Download and Export COOLR</b><br><img src = "images/thumb_guidedownload.png" width = "45px" style = "float:left; padding-right:10px;" target = "_blank"></a>
-						<p>Are you ready to use COOLR in your research? Walk through the steps to prepare COOLR as a file geodatabase (.gdb) for use in ArcMap and QGIS, and how to export COOLR as a comma-separated file (.csv) for use in other analysis programs.</p>
+						<table>
+							<tr>
+								<td><a href = "guides/COOLRGuide_Primer.pdf" target="_blank"><img src = "images/thumb_guideprimer.png?3" width = "100px" style = "float:left; padding-right:10px;"></a></td>
+								<td><p><a href = "guides/COOLRGuide_Primer.pdf" target="_blank"><span style = "font-size: 15px; font-weight: bold;">Primer and Landslide Identification</span></a></p>
+								<p>The basics of landslides and why we study them. For those who are new to landslides, you can read about how to identify landslide types, from rock falls to creeps.</p></td>
+							</tr>
+							<tr>
+								<td><a href = "guides/COOLRGuide_Training.pdf" target="_blank"><img src = "images/thumb_guidetraining.png?3" width = "100px" style = "float:left; padding-right:10px;"></a>
+								<td><p><a href = "guides/COOLRGuide_Training.pdf" target="_blank"><span style = "font-size: 15px; font-weight: bold;">Landslide Identification Training</span></a></p>
+								<p>Train your eye to identify landslides by their type and size in preparation for submitting using Landslide Reporter. An image and description is displayed on each page and its respective size and categorizations on the following page. Use the classification and size charts from the Landslide Primer chapter to help identify.</p></td>
+							</tr>
+							<tr>
+								<td><a href = "guides/COOLRGuide_AddEvent.pdf" target="_blank"><img src = "images/thumb_guideaddevent.png?3" width = "100px" style = "float:left; padding-right:10px;"></a></td>
+								<td><p><a href = "guides/COOLRGuide_AddEvent.pdf" target="_blank"><span style = "font-size: 15px; font-weight: bold;">Add a Landslide Event to COOLR</span></a></p>
+								<p>The step-by-step instructions for submitting a landslide event to COOLR. Let this guide walk you through everything from finding a landslide to how to fill out each category, and then how to go back and review your submissions.</p></td>
+							</tr>
+							<tr>
+								<td><a href = "guides/COOLRGuide_LocationTips.pdf" target="_blank"><img src = "images/thumb_guidelocation.png?3" width = "100px" style = "float:left; padding-right:10px;"></a></td>
+								<td><p><a href = "guides/COOLRGuide_LocationTips.pdf" target="_blank"><span style = "font-size: 15px; font-weight: bold;">Tips to Pinpoint Landslide Location from a News Article</span></a></p>
+								<p>When reporting landslides from a news article, it may be challenging to find exactly where the landslide occurred. This guide gives suggestions on how to use keywords to hone in on the location, discusses location accuracy, and shows how to use Google Maps or Google Earth to your advantage.</p></td>
+							</tr>
+						</table>
 						
 						<a id = "extresources"></a><h2>External resources</h2>
 						<i>More general landslide information</i>
 						<ol>
-							<li><a href = "https://pubs.usgs.gov/fs/2004/3072/fs-2004-3072.html">Landslide Types and Processes (USGS)</a>
-							<li><a href = "http://www.conservation.ca.gov/cgs/geologic_hazards/landslides/Pages/LandslideTypes.aspx">Types of Landslides (California Geological Survey)</a>
-							<li><a href = "https://www.dnr.wa.gov/programs-and-services/geology/geologic-hazards/landslides#.3">Why Do Landslides Happen? (Washington State DNR)</a>
-							<li><a href = "http://www.weatherwizkids.com/?page_id=1326">Landslide Questions (Weather Wiz Kids)</a>
-							<li><a href = "https://volcanoes.usgs.gov/vhp/lahars.html">Lahars (USGS)</a>
-							<li><a href = "https://svs.gsfc.nasa.gov/20226">Rotational Landslide Animation (NASA CILab)</a>
-							<li><a href = "https://svs.gsfc.nasa.gov/11854">Global Landslide Catalog Video (NASA Goddard Media Studios)</a>
+							<li><a href = "https://pubs.usgs.gov/fs/2004/3072/fs-2004-3072.html" target="_blank">Landslide Types and Processes (USGS)</a>
+							<li><a href = "http://www.conservation.ca.gov/cgs/geologic_hazards/landslides/Pages/LandslideTypes.aspx" target="_blank">Types of Landslides (California Geological Survey)</a>
+							<li><a href = "https://www.dnr.wa.gov/programs-and-services/geology/geologic-hazards/landslides#.3" target="_blank">Why Do Landslides Happen? (Washington State DNR)</a>
+							<li><a href = "http://www.weatherwizkids.com/?page_id=1326" target="_blank">Landslide Questions (Weather Wiz Kids)</a>
+							<li><a href = "https://volcanoes.usgs.gov/vhp/lahars.html" target="_blank">Lahars (USGS)</a>
+							<li><a href = "https://svs.gsfc.nasa.gov/20226" target="_blank">Rotational Landslide Animation (NASA CILab)</a>
+							<li><a href = "https://svs.gsfc.nasa.gov/11854" target="_blank">Global Landslide Catalog Video (NASA Goddard Media Studios)</a>
 						</ol>
 						
 						<i>Landslide disaster safety information</i>
 						<ol>
-							<li><a href = "http://www.redcross.org/get-help/how-to-prepare-for-emergencies/types-of-emergencies/landslide">Landslide Safety (Red Cross)</a>
-							<li><a href = "https://www.ready.gov/landslides-debris-flow">Landslides & Debris Flow Emergencies (US DHS)</a>
-							<li><a href = "http://file.dnr.wa.gov/publications/ger_homeowners_guide_landslides.pdf">Homeowners' Guide to Landslides (Washington GS and Oregno DOGAMI)</a>
+							<li><a href = "http://www.redcross.org/get-help/how-to-prepare-for-emergencies/types-of-emergencies/landslide" target="_blank">Landslide Safety (Red Cross)</a>
+							<li><a href = "https://www.ready.gov/landslides-debris-flow" target="_blank">Landslides & Debris Flow Emergencies (US DHS)</a>
+							<li><a href = "http://file.dnr.wa.gov/publications/ger_homeowners_guide_landslides.pdf" target="_blank">Homeowners' Guide to Landslides (Washington GS and Oregno DOGAMI)</a>
 						</ol>
 						
 						<i>Relevant websites</i>
 						<ol>
-							<li><a href = "https://landslides.usgs.gov/">US Geological Survey (USGS) Landslide Hazards Program</a>
-							<li><a href = "https://pmm.nasa.gov/applications/landslides">NASA Precipitation Measurement Missions (PMM) Landslide Applications</a>
+							<li><a href = "https://landslides.usgs.gov/" target="_blank">US Geological Survey (USGS) Landslide Hazards Program</a>
+							<li><a href = "https://pmm.nasa.gov/applications/landslides" target="_blank">NASA Precipitation Measurement Missions (PMM) Landslide Applications</a>
 						</ol>
 					</div> <!-- end Make a Report -->
 					
@@ -394,10 +425,10 @@
 						<p>The Time Slider allows you to pan through landslide events chronologically. <b>To use the tool, a Time Aware layer must be selected from the Layer List.</b></p>
 						<p>Once a Time Aware layer is selected, click the Time Slider icon in the menu to open the Time Slider panel. You can press “play” to automatically advance the sliders, change the range of dates, and change the speed of the sliders.</p>
 						
-					</div> <!-- end Navigating Landslide Viewer -->
+					</div> <!-- end Using Landslide Viewer -->
 					
 					<div id = "LVdownload" class = "LRcontent">
-						<h2>Downloading the Catalog</h2>
+						<h2>Downloading the Data</h2>
 						<h3>Contents</h3>
 						<ul>
 							<li><a href = "#referenceinfo">Referencing the data</a></li>
@@ -417,7 +448,15 @@
 						<a id = "datauseinfo"></a><h2>Using the data</h2>
 						<p>The Cooperative Open Online Landslide Inventory (COOLR) can be downloaded from <a href = "https://maps.nccs.nasa.gov/arcgis/apps/webappviewer/index.html?id=824ea5864ec8423fb985b33ee6bc05b7">Landslide Viewer</a> by clicking on the link “Download the full Landslide Catalog” at the top of the application. A new window will open with the information for downloading the GLC and the option to save it to your computer as a <b>file geodatabase (.gdb)</b>.</p>
 						<p>You can also create and download maps of the Landslide Viewer screen using the <b>Print</b> option in the top right-hand menu in Landslide Viewer.</p>
-						<p>The <a href = "guides/COOLRGuide_Exporting.pdf" target="_blank">Download and Export Guide</a> gives more information about how to download COOLR, how to open the dataset in ArcMap or QGIS, and how to convert the data to a comma-separated file (.csv) from ArcMap or QGIS. </p>
+						
+						<table>
+							<tr>
+								<td><a href = "guides/COOLRGuide_Exporting.pdf" target="_blank"><img src = "images/thumb_guidedownload.png?3" width = "100px" style = "float:left; padding-right:10px;"></a></td>
+								<td><p><a href = "guides/COOLRGuide_Exporting.pdf" target="_blank"><span style = "font-size: 15px; font-weight: bold;">Download and Export COOLR</span></a></p>
+								<p>The Download and Export Guide gives more information about how to download COOLR, how to open the dataset in ArcMap or QGIS, and how to convert the data to a comma-separated file (.csv) from ArcMap or QGIS.</p></td>
+							</tr>
+						</table>
+						
 
 					</div> <!-- end LVdownload div -->
 					
@@ -470,11 +509,12 @@
 				
 				<div class="urtwo"> <!-- begin right column in wrapper -->
 					<h2>Navigation</h2>
-					<a class = "LRtab active" onclick = "openLRinfo(event, 'LRprocess')" id = "keepLRprocessOpen">How You Can Submit to COOLR</a>
+					<a class = "LRtab active" onclick = "openLRinfo(event, 'COOLRgetstarted')">Get Started</a>
+					<a class = "LRtab" onclick = "openLRinfo(event, 'LRprocess')">How You Can Submit to COOLR</a>
 					<a class = "LRtab" onclick = "openLRinfo(event, 'LRuse')">Using Landslide Reporter</a>
 					<a class = "LRtab" onclick = "openLRinfo(event, 'LRreport')">Make a Report</a>
 					<a class = "LRtab" onclick = "openLRinfo(event, 'LVuse')">Using Landslide Viewer</a>
-					<a class = "LRtab" onclick = "openLRinfo(event, 'LVdownload')">Downloading the Catalog</a>
+					<a class = "LRtab" onclick = "openLRinfo(event, 'LVdownload')">Downloading the Data</a>
 					<a class = "LRtab" onclick = "openLRinfo(event, 'LRfaq')">Frequently Asked Questions</a>
 					<br>
 					
