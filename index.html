@@ -47,14 +47,12 @@
 **** START MAIN CONTENT HERE. ****
 **********************************
 -->	<!-- Welcome to Landslide Reporter! -->
-			<!-- import font -->
-			<link href="https://fonts.googleapis.com/css?family=PT+Serif" rel="stylesheet">
 			
 			<!-- CSS Styling -->
 			<style>
 				#LRbanner-bg{
 					position: relative;
-					width: 720px;
+					width: 715px;
 					margin: 0;
 					object-fit: contain;
 					background: url('images/banner-fatalmap.png') center top / cover no-repeat;
@@ -63,12 +61,11 @@
 					width: 100%;
 					margin: 0;
 					padding-top: 20px;
-					background-color:rgba(54,53,55,0.5);
+					text-shadow: 1px 1px 6px #000;
 				}
 				p#LRbanner-title {
-					font-size: 26px;
+					font-size: 28px;
 					font-weight: normal;
-					font-family: 'PT Serif', serif;
 					color: #fff;
 					line-height: 98%;
 					text-align: center;
@@ -77,33 +74,30 @@
 					padding: 0;
 					width: 280px;
 					height: auto;
-					border-radius: 12px;
 				}
 				
 				div#LRbannerbuttons {
 					position: absolute;
-					top: 195px;
-					left: 400px;
+					top: 220px;
+					left: 310px;
 				}
 				
 				div.LRsmbanner-overlay {
 					position: relative;
 					height: 100%;
 					width: 100%;
-					background-color:rgba(31,129,138,0.4);
-					border: 1px solid #233D4D;
-					border-radius: 12px;
+					background-color:rgba(90,176,186,0.5);
+					border-bottom: 1px solid #dcdcdd;
 				}
 				
 				div.LRsmbanner-overlay:hover {
-					background-color:rgba(31,129,138,0.6);
+					background-color:rgba(90,176,186,0.7);
 				}
 				.LRsmbanner-toptitle {
 					position: absolute;
 					top: 155px;
 					left: 280px;
 					font-size: 20px;
-					font-family: 'PT Serif', serif;
 					color: #fff;
 					text-shadow: 1px 1px 6px #000
 				}
@@ -113,7 +107,7 @@
 					padding-top: 15px;
 					padding-left: 15px;
 					padding-right: 15px;
-					padding-bottom: 0px;
+					padding-bottom: 10px;
 				}
 				ul.navbarLR {
 					bottom: 0;
@@ -141,13 +135,17 @@
 				li.navbarLR a:hover {
 					color: #DCDCDD;
 				}
+				
+				p, ul, ol, li, i, b, th, td {
+				font-size: 13px;
+				}
 			</style>
 			
 			<div id = "container">
 				<div id = "LRbanner-bg"> 
 					<div id = "LRbanner-overlay"> 
 						<p id = "LRbanner-title">
-								Cooperative Open Online Landslide Repository (COOLR)
+								LANDSLIDES @ NASA
 						</p>
 					</div>
 					
@@ -156,45 +154,55 @@
 						<li class = "navbarLR"><a href = "#">Home</a></li>
 						<li class = "navbarLR"><a href = "getstarted.html">Get Started</a></li>
 						<li class = "navbarLR"><a href = "publications.html">Publications</a></li>
-						<!-- <li class = "navbarLR" style = "float: right; background-color: #5AB1BB"><a href = "https://maps.nccs.nasa.gov/arcgis/apps/webappviewer/index.html?id=824ea5864ec8423fb985b33ee6bc05b7">Landslide Viewer</a></li>
-						<li class = "navbarLR" style = "float: right; background-color: #5AB1BB"><a href = "#">Landslide Reporter</a></li>
-						-->
+						<li class = "navbarLR"><a href = "privacy.html">Policies</a></li>
+						<li class = "navbarLR" style = "float: right; background-color: #5AB1BB;"><a href = "https://maps.nccs.nasa.gov/arcgis/apps/webappviewer/index.html?id=824ea5864ec8423fb985b33ee6bc05b7" target="_blank">Landslide Viewer</a></li>
+						<li class = "navbarLR" style = "float: right; background-color: #5AB1BB;"><a href = "https://maps.nccs.nasa.gov/apps/landslide_reporter/" target="_blank">Landslide Reporter</a></li>
 					</ul> <!-- end Navigation -->
 				</div>
 				
 			</div> <!-- end Banner -->
 			
-			<img id = "LRbannerad" src = "images/bannersmall_process.png">
-			<p class = "LRsmbanner-toptitle">Capturing as many landslides as possible, worldwide</p>
+			<img id = "LRbannerad" src = "images/bannersmall_process.png?3">
+			<p class = "LRsmbanner-toptitle">Building a greater picture of landslides with every report made.<span style = "font-family: Arial, Helvetica, sans-serif; font-size: 14px;"><br>Home of the Cooperative Open Online Landslide Repository (COOLR)</span></p>
 			<div id = "LRbannerbuttons"> <!-- buttons -->
-				<a href = "https://maps.nccs.nasa.gov/arcgis/apps/webappviewer/index.html?id=824ea5864ec8423fb985b33ee6bc05b7">
+				<a href = "https://landslides.nasa.gov/viewer" target="_blank">
 					<div class = "LRsmbanner">
 						<div class = "LRsmbanner-overlay">
-							<p class = "LRsmbanner-title"><img src = "images/LVlogo.png" width = "42" style="float:left; padding-right:10px;">
-							LANDSLIDE VIEWER: <br>Look at the Data</p>
+							<p class = "LRsmbanner-title"><img src = "images/LVlogo.png?2" width = "42" style="float:left; padding-right:10px;">
+							<span style = "font-weight: bold;">LANDSLIDE VIEWER</span> <br>Visualize and download the landslide repository</p>
 						</div>
 					</div>
 				</a>
-				<br>
-				<div class = "LRsmbanner">
-					<div class = "LRsmbanner-overlay">
-						<p class = "LRsmbanner-title"><img src = "images/LRlogo.png" width = "42" style="float:left; padding-right:10px;">
-						LANDSLIDE REPORTER: <br>Submit a Landslide (TBD)</p>
+				<a href = "https://landslides.nasa.gov/reporter" target="_blank">
+					<div class = "LRsmbanner">
+						<div class = "LRsmbanner-overlay">
+							<p class = "LRsmbanner-title"><img src = "images/LRlogo.png?2" width = "42" style="float:left; padding-right:10px;">
+							<span style = "font-weight: bold;">LANDSLIDE REPORTER</span> <br>Add your landslide events to the repository (BETA)</p>
+						</div>
 					</div>
-				</div>
+				</a>
 			</div> <!-- end buttons -->
 			<br><br>
 			<div class="twocol"> <!-- Two-column layout -->
 				<div class="urone"> <!-- begin left column in wrapper -->			
 					
 					<h2>What is COOLR?</h2>
-					<p>The Cooperative Open Landslide Inventory (COOLR) is a worldwide database of landslide events. It currently includes NASA’s 
-					Global Landslide Catalog (GLC) and citizen science data, and will soon allow for other landslide inventories. COOLR can be accessed 
-					on Landslide Viewer, and citizen scientists can contribute to COOLR through the new web application, Landslide Reporter.
+					<p>The Cooperative Open Online Landslide Repository (COOLR) is a worldwide database of landslide events. It currently includes NASA’s Global 
+					Landslide Catalog (GLC) and other landslide reports contributed by citizen scientists. In the future, COOLR will allow for other 
+					landslide inventories to be included. <br><br>COOLR currently has two components: Landslide Viewer provides a tool to visualize and download 
+					the data; and Landslide Reporter is a new web application that allows citizen scientists to add their own reports to the open database. 
+					</p>
+					
+					<h2>Why COOLR?</h2>
+					<p>Landslides cause billions of dollars in infrastructural damage and thousands of deaths every year around the world. However, to date 
+					we do not have a global picture of exactly where and when landslides occur owing to their small size and difficulty in identifying 
+					their onset and extent when no one is around to witness their impacts. The COOLR project seeks to cultivate an open platform where 
+					scientists and citizen scientists around the world can share landslide reports to guide awareness of landslide hazards for improving
+					scientific modeling and emergency response. 
 					</p>
 					
 					<h3>Learn more</h3>	
-					<p>Browse the Get Started page to learn what you can do with citizen science and COOLR, or read more below.</p>
+					<p>Browse the <a href = "getstarted.html">Get Started</a> page to learn how you can access the data, learn more about landslides, and contribute to advancing landslide science and emergency response by adding your own reports.</p>
 					
 					<!-- FAQ 2 -->
 					<span class = "showhide keystaff_header fnt_bold dsply_blck collapsible-heading">
@@ -204,56 +212,39 @@
 						</a>
 					</span>
 					<ul class = "type-list-none collapsible-content collapsible-content-collapsed" aria-hidden = "true">
-						<li>The GLC is the largest openly available global database of rainfall-triggered mass movements, 
-						including landslides, mudslides, debris flows, and more. The database was created in 2007 by Dr. Dalia 
-						Kirschbaum at NASA Goddard Space Flight Center, and now contains more than 11,000 reports on landslides 
-						around the world. Landslide reports come from all types of media, including news articles and other databases 
-						and have been reported by members of our lab.
-						<li>
-						The GLC provides open landslide hazard information to the broader community to 
-						improve basic landslide science and models, increase situational awareness, and improve 
-						disaster response. The GLC has been cited more than 75 times in peer-reviewed articles.
+						<li>The GLC is the largest openly available global database of rainfall-triggered mass movements known to date.
+						The database was created in at NASA Goddard Space Flight Center and currently contains more than 11,000 reports on landslides, debris flows, rock avalanches, etc. around the world. Reports of landslides are found primarily from online media, including news articles as well as other databases. 
+						The GLC has been compiled by scientists, interns and other colleagues at NASA GSFC. The GLC has been cited more than 75 times in peer-reviewed articles.
 					</ul> <!-- end of FAQ 2 -->
 					
-					<!-- FAQ 3 -->
-					<br>
-					<span class = "showhide keystaff_header fnt_bold dsply_blck collapsible-heading">
-						<a href = "#" class = "collapsible-heading-toggle">
-							<span class = "collapsible-heading-status">Hide</span>
-							What is citizen science?
-						</a>
-					</span>
-					<ul class = "type-list-none collapsible-content collapsible-content-collapsed" aria-hidden = "true">
-						<li>According to the Oxford English Dictionary, citizen science is “scientific work undertaken by 
-						members of the general public, often in collaboration with or under the direction of professional scientists 
-						and scientific institutions.” Citizen scientists are people like you who can use their knowledge to advance 
-						scientific research.
-					</ul> <!-- end of FAQ 3 -->
 					<br>
 					<!-- FAQ 4 -->
 					<span class = "showhide keystaff_header fnt_bold dsply_blck collapsible-heading">
 						<a href = "#" class = "collapsible-heading-toggle">
 							<span class = "collapsible-heading-status">Hide</span>
-							Why are citizen scientists needed to report landslides?
+							Why are citizen scientists needed?
 						</a>
 					</span>
 					<ul class = "type-list-none collapsible-content collapsible-content-collapsed" aria-hidden = "true">
-						<li>The Global Landslide Catalog (GLC) provides new insight into landslide hazards thanks 
-						to its global scope, but it is hard to maintain.<br>
-						Citizen science enables:
+						<li>The Global Landslide Catalog (GLC) provides new insight into landslide hazards around the world, but it has been a manual and very 
+						time consuming process that is hard to maintain. In fact, if we sum up all the hours it has taken over the past 10 years to compile this 
+						database it would total over 140 days or 84 work weeks. The database is also challenged by biases affecting where and when landslide 
+						information is available (for more details please see the <a href = "publications.html">publications</a> section). Therefore, we are appealing to the global citizen 
+						science community to help advance our knowledge of where and when landslides are happening around the world by adding reports to the 
+						Cooperative Open Online Landslide Repository (COOLR). Citizen scientists are people like you who can use their knowledge to advance 
+						scientific research.
+						<li>Citizen science enables:
 						<ol>
 						<li>1. A collection with as many different sources and as little bias as possible, 
 						including first-hand accounts, reports in other languages, and points from other 
 						databases
 						<li>2. More hands to contribute reports, leading to a more up-to-date and thorough
 						database
-						<li>3. Increased education about landslides as a natural process and natural/man-made 
+						<li>3. More awareness and education about landslides as a natural process and natural/man-made 
 						hazard
 						</ol>
 						<li>
-						With citizen science, we can improve both the quantity and quality of the Global 
-						Landslide Catalog to show a clearer image of how landslides are shaping our world.
-						Every landslide report made by you is another step towards a more predictable future!
+						With citizen science, we can improve both the quantity and quality open landslide data to provide a clearer picture of how landslides are shaping our world. Every landslide report made by you is another step towards a more predictable future! 
                         
 					</ul> <!-- end of FAQ 4 -->
 					<br>
@@ -262,7 +253,7 @@
 					<span class = "showhide keystaff_header fnt_bold dsply_blck collapsible-heading">
 						<a href = "#" class = "collapsible-heading-toggle">
 							<span class = "collapsible-heading-status">Hide</span>
-							How do I add landslide events to COOLR? (citizen science)
+							How do I add landslide events to COOLR?
 						</a>
 					</span>
 					<ul class = "type-list-none collapsible-content collapsible-content-collapsed" aria-hidden = "true">
@@ -281,8 +272,8 @@
 					</span>
 					<ul class = "type-list-none collapsible-content collapsible-content-collapsed" aria-hidden = "true">
 						<li>All approved landslide reports, Global Landslide Catalog data, and other COOLR data appears in <a href = "https://maps.nccs.nasa.gov/arcgis/apps/webappviewer/index.html?id=824ea5864ec8423fb985b33ee6bc05b7">Landslide Viewer.</a> 
-						You can select different layers on the map to categorize the reports and view side-by-side with environmental information. 
-						There is also a link to download the Global Landslide Catalog for in-depth analysis.
+						You can select different layers on the map to organize and visualize the reports and view on top of with environmental information. 
+						There is also a link to download the full Global Landslide Catalog for in-depth analysis.
 					</ul> <!-- end of FAQ 6 -->
 					<br>
 					<!-- FAQ 5 -->
@@ -293,38 +284,26 @@
 						</a>
 					</span>
 					<ul class = "type-list-none collapsible-content collapsible-content-collapsed" aria-hidden = "true">
-						<li>Yes! The Global Landslide Catalog is available to download from the <a href="https://maps.nccs.nasa.gov/arcgis/apps/webappviewer/index.html?id=824ea5864ec8423fb985b33ee6bc05b7">Landslide Viewer</a> page.
+						<li>Yes! The Global Landslide Catalog is publicly available to download from the <a href="https://maps.nccs.nasa.gov/arcgis/apps/webappviewer/index.html?id=824ea5864ec8423fb985b33ee6bc05b7">Landslide Viewer</a> page.
+						We ask that you provide a citation link to the website or, for published articles, cite the dataset using the publications referenced below.
 					</ul> <!-- end of FAQ 5 -->
-					
-				</div> <!-- end left column in wrapper -->
-				<div class = "urtwo"> <!-- begin right column in wrapper -->
-				
-				<h2>For Data Users</h2>
-				<h3>Request for Acknowledgment of Use of GLC Data</h3>
-				<p>Users of the Global Landslide Catalog data are requested to reference the source of the data in any publication using the citations below:</p>
+				<br><br>
+				<h2>Data Citation</h2>
+				<h3>GLC Data Citation</h3>
+				<p>The NASA’s Global Landslide Catalog data is described and can be referenced by the following publications:</p>
 				<ul>
 					<li>Kirschbaum, D.B., Stanley, T., & Zhou, Y. (2015). Spatial and temporal analysis of a global landslide catalog.<i> Geomorphology, 249</i>, 4-15. doi:<a href = "https://doi.org/10.1016/j.geomorph.2015.03.016">10.1016/j.geomorph.2015.03.016</a>
 					<li>Kirschbaum, D.B., Adler, R., Hong, Y., Hill, S., & Lerner-Lam, A. (2010). A global landslide catalog for hazard applications: method, results, and limitations. <i>Natural Hazards, 52,</i> 561-575. <a href = "https://doi.org/10.1007/s11069-009-9401-4">doi:10.1007/s11069-009-9401-4</a>
 				</ul>
 				</p>
+					
+				</div> <!-- end left column in wrapper -->
+				<div class = "urtwo"> <!-- begin right column in wrapper -->
 				
 				<h2>Contact</h2>
-				<p>If you need help beyond the Get Started page or experience a bug, feel free to email 
-				<a href = "mailto:landslide_support@nccs.nasa.gov">landslide_support@nccs.nasa.gov</a>.
+				<p>For any questions related to this system, please contact 
+				<a href = "mailto:landslide_support@nccs.nasa.gov?subject=[LANDSLIDES] ">landslide_support@nccs.nasa.gov</a>.
 				</p>
-				<h3>Project Managers</h3>
-				<a href = "https://science.gsfc.nasa.gov/sed/bio/caroline.juang">Caroline Juang</a>
-				<br><a href = "https://science.gsfc.nasa.gov/sed/bio/dalia.b.kirschbaum">Dr. Dalia Kirschbaum</a>
-				<br><a href = "https://science.gsfc.nasa.gov/sed/bio/thomas.a.stanley">Thomas Stanley</a>
-				<br><br>
-				
-				<h3>With acknowledgments to:</h3>
-				Jim Shute
-				<br>Laura Carriere
-				<br>Dan Duffy
-				<br>Neh Patel
-				
-				
 				
 				</div> <!-- end right column in wrapper -->
 			</div> <!-- end two-column layout -->

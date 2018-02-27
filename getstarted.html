@@ -47,14 +47,12 @@
 **** START MAIN CONTENT HERE. ****
 **********************************
 -->	<!-- Welcome to Landslide Reporter! -->
-			<!-- import font -->
-			<link href="https://fonts.googleapis.com/css?family=PT+Serif" rel="stylesheet">
 			
 			<!-- CSS Styling -->
 			<style>
 				#LRbanner-bg{
 					position: relative;
-					width: 720px;
+					width: 715px;
 					height: auto;
 					margin: 0;
 					object-fit: contain;
@@ -64,21 +62,13 @@
 					width: 100%;
 					margin: 0;
 					padding-top: 20px;
-					background-color:rgba(54,53,55,0.5);
+					text-shadow: 1px 1px 6px #000;
 				}
 				p#LRbanner-title {
-					font-size: 26px;
+					font-size: 28px;
 					font-weight: normal;
-					font-family: 'PT Serif', serif;
 					color: #fff;
 					line-height: 98%;
-					text-align: center;
-				}
-				p#LRbanner-subtitle {
-					font-size: 18px;
-					font-weight: normal;
-					font-family: 'PT Serif', serif;
-					color: #fff;
 					text-align: center;
 				}
 				.LRtab {
@@ -97,7 +87,7 @@
 				.LRcontent {
 					display: none;
 				}
-				.LRcontent#LRprocess {
+				.LRcontent#COOLRgetstarted {
 					display: block;
 				}
 				ul.navbarLR {
@@ -135,14 +125,20 @@
 				
 				table tr:nth-child(even) {
 					background-color: #EAFBFD;
+					border: 3px solid #fff;
 				}
 				
 				table tr:nth-child(odd) {
-					background-color: #BEECF0;
+					background-color: #EAFBFD;
+					border: 3px solid #fff;
 				}
 				
 				table td {
 					padding: 6px;
+				}
+				
+				p, ul, ol, li, i, b, th, td {
+				font-size: 13px;
 				}
 			</style>
 			
@@ -167,7 +163,7 @@
 				<div id = "LRbanner-bg"> 
 					<div id = "LRbanner-overlay"> 
 						<p id = "LRbanner-title">
-								Cooperative Open Online Landslide Repository (COOLR)
+								LANDSLIDES @ NASA
 						</p>
 					</div>
 					
@@ -176,8 +172,9 @@
 						<li class = "navbarLR"><a href = "index.html">Home</a></li>
 						<li class = "navbarLR"><a href = "#">Get Started</a></li>
 						<li class = "navbarLR"><a href = "publications.html">Publications</a></li>
-						<li class = "navbarLR" style = "float: right; background-color: #5AB1BB"><a href = "https://maps.nccs.nasa.gov/arcgis/apps/webappviewer/index.html?id=824ea5864ec8423fb985b33ee6bc05b7">Landslide Viewer</a></li>
-						<li class = "navbarLR" style = "float: right; background-color: #5AB1BB"><a href = "#">Landslide Reporter</a></li>
+						<li class = "navbarLR"><a href = "privacy.html">Policies</a></li>
+						<li class = "navbarLR" style = "float: right; background-color: #5AB1BB;"><a href = "https://maps.nccs.nasa.gov/arcgis/apps/webappviewer/index.html?id=824ea5864ec8423fb985b33ee6bc05b7" target="_blank">Landslide Viewer</a></li>
+						<li class = "navbarLR" style = "float: right; background-color: #5AB1BB;"><a href = "https://maps.nccs.nasa.gov/apps/landslide_reporter/" target="_blank">Landslide Reporter</a></li>
 					</ul> <!-- end Navigation -->
 				</div>
 				
@@ -185,27 +182,52 @@
 			<br>
 			<div class="twocol"> <!-- Two-column layout -->
 				<div class="urone"> <!-- begin left column in wrapper -->
+					<div id = "COOLRgetstarted" class = "LRcontent">
+					<img src = "images/banner_getstarted.png?5" alt = "Get started with using COOLR's Landslide Viewer and Landslide Reporter">
+					<p><p>To learn more about Landslide Viewer and Landslide Reporter, use the navigation on the right side of the page or click the sections below:
+					<table>
+						<tr>
+							<th>Landslide Viewer</th>
+							<th>Landslide Reporter</th>
+						</tr>
+						<tr>
+							<td width = "230px">
+								<h3>Page Sections</h3>
+								<p><a onclick = "openLRinfo(event, 'LVuse')">Using Landslide Viewer</a></p>
+								<p><a onclick = "openLRinfo(event, 'LVdownload')">Downloading the Data</a></p>
+							</td>
+							<td width = "230px">
+								<h3>Page Sections</h3>
+								<p><a onclick = "openLRinfo(event, 'LRprocess')">How You Can Submit to COOLR</a></p>
+								<p><a onclick = "openLRinfo(event, 'LRuse')">Using Landslide Reporter</a></p>
+								<p><a onclick = "openLRinfo(event, 'LRreport')">Make a Report</a></p>
+								</ul>
+							</td>
+						</tr>
+					</table>
+					</div> <!-- end Get Started -->
+					
 					<div id = "LRprocess" class = "LRcontent">
-						<h2>Using Citizen Science to Submit to COOLR</h2>
-						<p>Making a worldwide database of landslides is not an easy task, and cannot be accomplished without citizen science.
-						As a citizen scientist, you play a transformational role in improving landslide science. Your goal is to submit landslides that you find in media or
-						in person to COOLR. Collecting as many landslides as possible will lead to better landslide modeling,
-						prediction, future research. </p>
-						<p>The main steps to this submission process are:
+						<h2>How You Can Submit to COOLR</h2>
+						<p>In order to build a more comprehensive, worldwide database of landslides, we need you! It is not an easy task and 
+						cannot be accomplished without citizen science. As a citizen scientist, you play a transformational role in improving 
+						landslide science. The Cooperative Open Online Landslide Repository (COOLR) provides a platform to submit landslides that you find in media, in person, or through other 
+						credible means to COOLR. Our goal is to collect as many landslides as we can to enable better research, modeling, prediction, and response.</p>
+						<p>The main steps to the submission process are:
 						</p>
 						<ol>
-							<li><b>Landslide occurs: </b>A landslide event occurs and is reported in a newspaper article, online database, or in your local area.
-							<li><b>Submit to Landslide Reporter: </b>Use Landslide Reporter describe and add an event to the database.
-							<li><b>Approval: </b>Our team checks all of the incoming landslide reports for accuracy.
-							<li><b>View Your Landslide: </b>Once approved, your landslide event appears on Landslide Viewer alongside other landslide databases like the GLC.
-							<li><b>Download and Use: </b>Scientists and the public can download the landslide data from Landslide Viewer to use in research, models, and policy work!
+							<li><b>Landslide occurs: </b>A landslide event (see definition in the <a href = "guides/COOLRGuide_Primer.pdf" target="_blank">Primer</a>) occurs and is reported in a newspaper article, online database, or in your local area.
+							<li><b>Submit to Landslide Reporter: </b>Using Landslide Reporter, you can add this event to the database and describe its setting, impacts, and details. The <a href = "guides/COOLRGuide_AddEvent.pdf" target="_blank">Add a Landslide Event Guide</a> takes you through this process step-by-step. When investigating a landslide, the most important thing is to <b><span style = "color: #BE2439;"> be in a safe place!</span></b> Do not conduct field work or look at a landslide up close unless you are an expert.
+							<li><b>Approval: </b>Our team at NASA checks the incoming landslide reports for accuracy in a best effort basis.
+							<li><b>View Your Landslide: </b>Once approved, your landslide event appears on <a href = "https://maps.nccs.nasa.gov/arcgis/apps/webappviewer/index.html?id=824ea5864ec8423fb985b33ee6bc05b7" target="_blank">Landslide Viewer</a> alongside other landslide databases like the GLC for the world to see.
+							<li><b>Download and Use: </b>Scientists and the public can download the landslide data from Landslide Viewer to use in research, models, and policy work.
 						</ol>
 						<p>For more information about how you can make your landslide submission today, refer to the Navigation on the right.
 						</p>
 					</div>
 					
 					<div id = "LRuse" class = "LRcontent">
-						<h2>Navigating Landslide Reporter</h2>
+						<h2>Using Landslide Reporter</h2>
 						<h3>Contents</h3>
 						<ul>
 							<li><a href = "#accessingLR">Accessing the application</a>
@@ -213,9 +235,9 @@
 							<li><a href = "#usingLRphone">Using Landslide Reporter on your mobile device</a>
 						</ul>
 						<a id = "accessingLR"></a><h2>Accessing the Application</h2>
-						<p>Landslide Reporter can be accessed by either your computer’s or your mobile phone’s internet browser. You will need a Facebook account or Google+ account to log in. Logging in will allow you to access your previous submissions. Your credentials will not be publicly linked to your reports in the online database.
+						<p>Landslide Reporter can be accessed via internet by your computer or mobile device. You will need a Facebook account or Google+ account to log in. Logging in will allow you to access your previous submissions. Your credentials will not be publicly linked to your reports in the online database. Please see our <a href = "privacy.html">privacy policy</a> for more information.
 						</p>
-						<p>Upon signing in, you will be presented with the Terms and Conditions of using Landslide Reporter. Closing the box indicates you have accepted the Terms and Conditions.
+						<p>Upon signing in, you will be presented with the <a href = "privacy.html">Terms and Conditions</a> of using Landslide Reporter. <b>Closing the box indicates you have accepted the Terms and Conditions.</b>
 						</p>
 						<p>Once logged in, your browser may ask you to use your location. Click “Accept” or “Allow” so that the browser can pinpoint your current location, making it easier for you to submit local events.
 						</p>
@@ -260,7 +282,7 @@
 						</ol>
 						<br><br>
 						
-					</div> <!-- end Navigating Landslide Reporter -->
+					</div> <!-- end Using Landslide Reporter -->
 					
 					<div id = "LRreport" class = "LRcontent">
 						<h2>Make a Report</h2>
@@ -271,43 +293,54 @@
 						</ul>
 						
 						<a id = "howtoguides"></a><h2>How-to guides</h2>
-						<p>Are you ready to contribute to COOLR? Reading the Landslide Reporter’s Guide below will help you make a better submission to the database. Browse through basic information on landslides, hone your skills at identifying landslides, step through the report process, and follow tips on pinpointing a landslide’s location.</p>
+						<p>Are you ready to contribute to COOLR? Reviewing the Landslide Reporter’s Guide below will help you make a better submission to the database as you browse through basic information on landslides, hone your skills at identifying landslides, step through the report process, and follow tips on pinpointing a landslide’s location.</p>
 						
-						<i>Landslide Primer</i>
-						<p>The basics of landslides and why we study them. For those who are new to landslides, you can read about how to identify landslide types, from rock falls to creeps.</p>
-						
-						<i>Landslide Identification Training</i>
-						<p>Train your eye to identify landslides by their type and size in preparation for submitting using Landslide Reporter. An image and description is displayed on each page and its respective size and categorizations on the following page. Use the classification and size charts from the Landslide Primer chapter to help identify.</p>
-						
-						<i>Add a Landslide Event to COOLR</i>
-						<p>The step-by-step instructions for submitting a landslide event to COOLR. Let this guide walk you through everything from finding a landslide to how to fill out each category, and then how to go back and review your submissions.</p>
-						
-						<i>Tips to Pinpoint Landslide Location from a News Article</i>
-						<p>When reporting landslides from a news article, it may be challenging to find exactly where the landslide occurred. This guide gives suggestions on how to use keywords to hone in on the location, discusses location accuracy, and shows how to use Google Maps or Google Earth to your advantage.</p>
+						<table>
+							<tr>
+								<td><a href = "guides/COOLRGuide_Primer.pdf" target="_blank"><img src = "images/thumb_guideprimer.png?3" width = "100px" style = "float:left; padding-right:10px;"></a></td>
+								<td><p><a href = "guides/COOLRGuide_Primer.pdf" target="_blank"><span style = "font-size: 15px; font-weight: bold;">Primer and Landslide Identification</span></a></p>
+								<p>The basics of landslides and why we study them. For those who are new to landslides, you can read about how to identify landslide types, from rock falls to creeps.</p></td>
+							</tr>
+							<tr>
+								<td><a href = "guides/COOLRGuide_Training.pdf" target="_blank"><img src = "images/thumb_guidetraining.png?3" width = "100px" style = "float:left; padding-right:10px;"></a>
+								<td><p><a href = "guides/COOLRGuide_Training.pdf" target="_blank"><span style = "font-size: 15px; font-weight: bold;">Landslide Identification Training</span></a></p>
+								<p>Train your eye to identify landslides by their type and size in preparation for submitting using Landslide Reporter. An image and description is displayed on each page and its respective size and categorizations on the following page. Use the classification and size charts from the Landslide Primer chapter to help identify.</p></td>
+							</tr>
+							<tr>
+								<td><a href = "guides/COOLRGuide_AddEvent.pdf" target="_blank"><img src = "images/thumb_guideaddevent.png?3" width = "100px" style = "float:left; padding-right:10px;"></a></td>
+								<td><p><a href = "guides/COOLRGuide_AddEvent.pdf" target="_blank"><span style = "font-size: 15px; font-weight: bold;">Add a Landslide Event to COOLR</span></a></p>
+								<p>The step-by-step instructions for submitting a landslide event to COOLR. Let this guide walk you through everything from finding a landslide to how to fill out each category, and then how to go back and review your submissions.</p></td>
+							</tr>
+							<tr>
+								<td><a href = "guides/COOLRGuide_LocationTips.pdf" target="_blank"><img src = "images/thumb_guidelocation.png?3" width = "100px" style = "float:left; padding-right:10px;"></a></td>
+								<td><p><a href = "guides/COOLRGuide_LocationTips.pdf" target="_blank"><span style = "font-size: 15px; font-weight: bold;">Tips to Pinpoint Landslide Location from a News Article</span></a></p>
+								<p>When reporting landslides from a news article, it may be challenging to find exactly where the landslide occurred. This guide gives suggestions on how to use keywords to hone in on the location, discusses location accuracy, and shows how to use Google Maps or Google Earth to your advantage.</p></td>
+							</tr>
+						</table>
 						
 						<a id = "extresources"></a><h2>External resources</h2>
 						<i>More general landslide information</i>
 						<ol>
-							<li><a href = "https://pubs.usgs.gov/fs/2004/3072/fs-2004-3072.html">Landslide Types and Processes (USGS)</a>
-							<li><a href = "http://www.conservation.ca.gov/cgs/geologic_hazards/landslides/Pages/LandslideTypes.aspx">Types of Landslides (California Geological Survey)</a>
-							<li><a href = "https://www.dnr.wa.gov/programs-and-services/geology/geologic-hazards/landslides#.3">Why Do Landslides Happen? (Washington State DNR)</a>
-							<li><a href = "http://www.weatherwizkids.com/?page_id=1326">Landslide Questions (Weather Wiz Kids)</a>
-							<li><a href = "https://volcanoes.usgs.gov/vhp/lahars.html">Lahars (USGS)</a>
-							<li><a href = "https://svs.gsfc.nasa.gov/20226">Rotational Landslide Animation (NASA CILab)</a>
-							<li><a href = "https://svs.gsfc.nasa.gov/11854">Global Landslide Catalog Video (NASA Goddard Media Studios)</a>
+							<li><a href = "https://pubs.usgs.gov/fs/2004/3072/fs-2004-3072.html" target="_blank">Landslide Types and Processes (USGS)</a>
+							<li><a href = "http://www.conservation.ca.gov/cgs/geologic_hazards/landslides/Pages/LandslideTypes.aspx" target="_blank">Types of Landslides (California Geological Survey)</a>
+							<li><a href = "https://www.dnr.wa.gov/programs-and-services/geology/geologic-hazards/landslides#.3" target="_blank">Why Do Landslides Happen? (Washington State DNR)</a>
+							<li><a href = "http://www.weatherwizkids.com/?page_id=1326" target="_blank">Landslide Questions (Weather Wiz Kids)</a>
+							<li><a href = "https://volcanoes.usgs.gov/vhp/lahars.html" target="_blank">Lahars (USGS)</a>
+							<li><a href = "https://svs.gsfc.nasa.gov/20226" target="_blank">Rotational Landslide Animation (NASA CILab)</a>
+							<li><a href = "https://svs.gsfc.nasa.gov/11854" target="_blank">Global Landslide Catalog Video (NASA Goddard Media Studios)</a>
 						</ol>
 						
 						<i>Landslide disaster safety information</i>
 						<ol>
-							<li><a href = "http://www.redcross.org/get-help/how-to-prepare-for-emergencies/types-of-emergencies/landslide">Landslide Safety (Red Cross)</a>
-							<li><a href = "https://www.ready.gov/landslides-debris-flow">Landslides & Debris Flow Emergencies (US DHS)</a>
-							<li><a href = "http://file.dnr.wa.gov/publications/ger_homeowners_guide_landslides.pdf">Homeowners' Guide to Landslides (Washington GS and Oregno DOGAMI)</a>
+							<li><a href = "http://www.redcross.org/get-help/how-to-prepare-for-emergencies/types-of-emergencies/landslide" target="_blank">Landslide Safety (Red Cross)</a>
+							<li><a href = "https://www.ready.gov/landslides-debris-flow" target="_blank">Landslides & Debris Flow Emergencies (US DHS)</a>
+							<li><a href = "http://file.dnr.wa.gov/publications/ger_homeowners_guide_landslides.pdf" target="_blank">Homeowners' Guide to Landslides (Washington GS and Oregno DOGAMI)</a>
 						</ol>
 						
-						<p>Landslide websites</p>
+						<i>Relevant websites</i>
 						<ol>
-							<li><a href = "https://landslides.usgs.gov/">US Geological Survey (USGS) Landslide Hazards Program</a>
-							<li><a href = "https://pmm.nasa.gov/applications/landslides">NASA Precipitation Measurement Missions (PMM) Landslide Applications</a>
+							<li><a href = "https://landslides.usgs.gov/" target="_blank">US Geological Survey (USGS) Landslide Hazards Program</a>
+							<li><a href = "https://pmm.nasa.gov/applications/landslides" target="_blank">NASA Precipitation Measurement Missions (PMM) Landslide Applications</a>
 						</ol>
 					</div> <!-- end Make a Report -->
 					
@@ -322,7 +355,7 @@
 							<li><a href = "#LVtimeslider">Using the Time Slider</a></li>
 						</ul>
 						<a id = "accessingLV"></a><h2>Accessing the application</h2>
-						<p>Landslide Viewer can be accessed by either your computer’s or your mobile phone’s internet browser. Upon loading the page, you will be presented with the Terms and Conditions of using Landslide Viewer. Checking the box “I agree to the above terms and conditions” will grant you access to the application.</p>
+						<p>Landslide Viewer can be accessed by an internet browser on either your computer or mobile device. Upon loading the page, you will be presented with the Terms and Conditions of using Landslide Viewer. Checking the box “I agree to the above terms and conditions” will grant you access to the application.</p>
 						<p>Once logged in, your browser may ask you to use your location. Click “Accept” or “Allow” so that the browser can pinpoint your current location, making it easier for you to submit local events.</p>
 
 						<a id = "usingLVweb"></a><h2>Using Landslide Viewer on the web</h2>
@@ -331,14 +364,14 @@
 						<i>Main Screen</i>
 						<ol>
 							<li><b>Map navigation: </b>Zoom and search for locations.
-							<li><b>Location search: </b>Find the name of a location on the map.
+							<li><s><b>Location search: </b>Not available</s>
 							<li><b>Measurement: </b>Measure area, measure distance, and find geographic coordinates.
-							<li><b>Summarize: </b>
+							<li><s><b>Summarize: </b>Not available</s>
 							<li><b>Draw: </b>Opens a menu with tools to draw points, lines, shapes, and add text to the map.
 							<li><b>Download: </b>Opens a new page with the link to download the Global Landslide Catalog.
 							<li><b>Points: </b>Landslide events. Clicking will open details about a particular event.
 							<li><b>Bookmark: </b>Your saved/bookmarked locations and the option to add/delete bookmarks. 
-							<li><b>Basemap Gallery: </b>Different options for the map, like satellite imagery, OpenStreetMap roads, terrain, etc.
+							<li><b>Basemap Gallery: </b>Different options for the base or reference map, like satellite imagery, OpenStreetMap roads, terrain, etc.
 							<li><b>Layer List: </b>Select/deselect what to display on the map, like the database points and polygons, models for flood and landslide risk, etc.
 							<li><b>Time Slider: </b>: Pan through landslide events chronologically. A “Time Aware” layer must be selected from Layer List for the Time Slider to be available.
 							<li><b>Print: </b>Save your current map as a downloadable and printable file on your computer.
@@ -350,9 +383,9 @@
 						<i>Main Screen</i>
 						<ol>
 							<li><b>Map navigation: </b>Zoom and search for locations.
-							<li><b>Location search: </b>Find the name of a location on the map.
+							<li><s><b>Location search: </b>Not available</s>
 							<li><b>Measurement: </b>Measure area, measure distance, and find geographic coordinates.
-							<li><b>Summarize: </b>
+							<li><s><b>Summarize: </b>Not available</s>
 							<li><b>Draw: </b>Opens a menu with tools to draw points, lines, shapes, and add text to the map.
 							<li><b>Download: </b>Opens a new page with the link to download the Global Landslide Catalog.
 							<li><b>Points: </b>Landslide events. Clicking will open details about a particular event.
@@ -365,7 +398,7 @@
 							<li><b>About: </b>Information about ArcGIS.
 						</ol>
 						<a id = "LVlayerlist"></a><h2>COOLR data analysis options in Layer List</h2>
-						<p>The data from the Cooperative Open Online Landslide Repository (COOLR) can be colored and displayed in several ways on the map. These are the available options in Layer List.</p>
+						<p>The data from the Cooperative Open Online Landslide Repository (COOLR) can be organized and displayed in several ways on the map. These are the available options in Layer List.</p>
 						<table>
 							<tr>
 								<th>Data Type</th>
@@ -374,10 +407,6 @@
 							<tr>
 								<td>Landslide Points/Polygons</td>
 								<td>All points or polygons are marked on the map.</td>
-							</tr>
-							<tr>
-								<td>Category</td>
-								<td>All points are colored by the type of landslide (e.g. mudslide, rock fall, etc.)</td>
 							</tr>
 							<tr>
 								<td>Fatalities</td>
@@ -395,20 +424,39 @@
 						<p>The Time Slider allows you to pan through landslide events chronologically. <b>To use the tool, a Time Aware layer must be selected from the Layer List.</b></p>
 						<p>Once a Time Aware layer is selected, click the Time Slider icon in the menu to open the Time Slider panel. You can press “play” to automatically advance the sliders, change the range of dates, and change the speed of the sliders.</p>
 						
-					</div> <!-- end Navigating Landslide Viewer -->
+					</div> <!-- end Using Landslide Viewer -->
 					
 					<div id = "LVdownload" class = "LRcontent">
-						<h2>Downloading the Catalog</h2>
-						<p>The Global Landslide Catalog (GLC) can be downloaded from Landslide Viewer by clicking on the link “Download the full Landslide Catalog” at the top of the application. A new window will open with the information for downloading the GLC and the option to save it to your computer as a .gdb file.
-						</p>
-						<p>If you use the GLC in your research publication, we request that you reference the source of the data in any publication using the DOIs below:
+						<h2>Downloading the Data</h2>
+						<h3>Contents</h3>
+						<ul>
+							<li><a href = "#referenceinfo">Referencing the data</a></li>
+							<li><a href = "#datauseinfo">Using the data</a></li>
+						</ul>
+						
+						<a id = "referenceinfo"></a><h2>Referencing the data</h2>
+						<h3>Global Landslide Catalog (GLC)</h3>
+						<p>If you use the Global Landslide Catalog (GLC) in your research publication, we request that you reference the GLC database using the publications below:
 						</p>
 						<ul>
-							<li>Kirschbaum, D.B., Stanley, T., & Zhou, Y. (2015). Spatial and temporal analysis of a global landslide catalog. Geomorphology, 249, 4-15. doi:10.1016/j.geomorph.2015.03.016
-							<li>Kirschbaum, D.B., Adler, R., Hong, Y., Hill, S., & Lerner-Lam, A. (2010). A global landslide catalog for hazard applications: method, results, and limitations. Natural Hazards, 52, 561-575. doi:10.1007/s11069-009-9401-4
+							<li>Kirschbaum, D.B., Stanley, T., & Zhou, Y. (2015). Spatial and temporal analysis of a global landslide catalog. <i>Geomorphology</i>, 249, 4-15. doi:10.1016/j.geomorph.2015.03.016
+							<li>Kirschbaum, D.B., Adler, R., Hong, Y., Hill, S., & Lerner-Lam, A. (2010). A global landslide catalog for hazard applications: method, results, and limitations.<i> Natural Hazards</i>, 52, 561-575. doi:10.1007/s11069-009-9401-4
 						</ul>
-						<p>Any questions about citing the Global Landslide Catalog can be directed towards <a href = "mailto:dalia.b.kirschbaum@nasa.gov">Dalia Kirschbaum</a>. 
 						</p>
+						
+						<a id = "datauseinfo"></a><h2>Using the data</h2>
+						<p>The Cooperative Open Online Landslide Inventory (COOLR) can be downloaded from <a href = "https://maps.nccs.nasa.gov/arcgis/apps/webappviewer/index.html?id=824ea5864ec8423fb985b33ee6bc05b7">Landslide Viewer</a> by clicking on the link “Download the full Landslide Catalog” at the top of the application. A new window will open with the information for downloading the GLC and the option to save it to your computer as a <b>file geodatabase (.gdb)</b>.</p>
+						<p>You can also create and download maps of the Landslide Viewer screen using the <b>Print</b> option in the top right-hand menu in Landslide Viewer.</p>
+						
+						<table>
+							<tr>
+								<td><a href = "guides/COOLRGuide_Exporting.pdf" target="_blank"><img src = "images/thumb_guidedownload.png?3" width = "100px" style = "float:left; padding-right:10px;"></a></td>
+								<td><p><a href = "guides/COOLRGuide_Exporting.pdf" target="_blank"><span style = "font-size: 15px; font-weight: bold;">Download and Export COOLR</span></a></p>
+								<p>The Download and Export Guide gives more information about how to download COOLR, how to open the dataset in ArcMap or QGIS, and how to convert the data to a comma-separated file (.csv) from ArcMap or QGIS.</p></td>
+							</tr>
+						</table>
+						
+
 					</div> <!-- end LVdownload div -->
 					
 					<div id = "LRfaq" class = "LRcontent">
@@ -420,16 +468,38 @@
 							</a>
 						</span>
 						<ul class = "type-list-none collapsible-content collapsible-content-collapsed" aria-hidden = "true">
-							If the submission hasn’t been checked by our team yet, you may edit it under My Submissions. Click on the report you want to edit, and click the pencil icon or trash icon in the top right-hand corner to edit or delete the report.
+							<li>If the submission hasn’t been checked by our team yet, you may edit it under My Submissions. Click on the report you want to edit, and click the pencil icon or trash icon in the top right-hand corner to edit or delete the report.
 						</ul>
 						
 						<span class = "showhide keystaff_header fnt_bold dsply_blck collapsible-heading">
 							<a href = "#" class = "collapsible-heading-toggle">
-							Are the submissions quality-checked before they’re added to the catalog?
+							Are the submissions quality-checked before they are added to the catalog?
 							</a>
 						</span>
 						<ul class = "type-list-none collapsible-content collapsible-content-collapsed" aria-hidden = "true">
-							Yes, all reports submitted through Landslide Reporter are quality-checked by members of our lab at NASA Goddard Space Flight Center for accuracy.
+							<li>Yes, all reports submitted through Landslide Reporter are quality-checked on a best effort basis by members of the team at NASA Goddard Space Flight Center.
+						</ul>
+						
+						<span class = "showhide keystaff_header fnt_bold dsply_blck collapsible-heading">
+							<a href = "#" class = "collapsible-heading-toggle">
+							Is my information tied to my landslide reports and made publicly available on COOLR?
+							</a>
+						</span>
+						<ul class = "type-list-none collapsible-content collapsible-content-collapsed" aria-hidden = "true">
+							<li>No, we do not store any personally identifiable information nor do we make that information public. 
+						</ul>
+						
+						<span class = "showhide keystaff_header fnt_bold dsply_blck collapsible-heading">
+							<a href = "#" class = "collapsible-heading-toggle">
+							I used the Global Landslide Catalog (GLC) in my research. How do I cite it?
+							</a>
+						</span>
+						<ul class = "type-list-none collapsible-content collapsible-content-collapsed" aria-hidden = "true">
+							<li>If you use the Global Landslide Catalog (GLC) in your research publication, we request that you reference the GLC database using the publications below:
+							<ul>
+								<li>Kirschbaum, D.B., Stanley, T., & Zhou, Y. (2015). Spatial and temporal analysis of a global landslide catalog. <i>Geomorphology</i>, 249, 4-15. doi:10.1016/j.geomorph.2015.03.016
+								<li>Kirschbaum, D.B., Adler, R., Hong, Y., Hill, S., & Lerner-Lam, A. (2010). A global landslide catalog for hazard applications: method, results, and limitations. <i>Natural Hazards</i>, 52, 561-575. doi:10.1007/s11069-009-9401-4
+							</ul>
 						</ul>
 						
 					</div> <!-- end LRfaq div -->
@@ -438,23 +508,18 @@
 				
 				<div class="urtwo"> <!-- begin right column in wrapper -->
 					<h2>Navigation</h2>
-					<a class = "LRtab active" onclick = "openLRinfo(event, 'LRprocess')" id = "keepLRprocessOpen">Using Citizen Science to Submit to COOLR</a>
-					<a class = "LRtab" onclick = "openLRinfo(event, 'LRuse')">Navigating Landslide Reporter</a>
+					<a class = "LRtab active" onclick = "openLRinfo(event, 'COOLRgetstarted')">Get Started</a>
+					<a class = "LRtab" onclick = "openLRinfo(event, 'LRprocess')">How You Can Submit to COOLR</a>
+					<a class = "LRtab" onclick = "openLRinfo(event, 'LRuse')">Using Landslide Reporter</a>
 					<a class = "LRtab" onclick = "openLRinfo(event, 'LRreport')">Make a Report</a>
-					<a class = "LRtab" onclick = "openLRinfo(event, 'LVuse')">Navigating Landslide Viewer</a>
-					<a class = "LRtab" onclick = "openLRinfo(event, 'LVdownload')">Downloading the Catalog</a>
+					<a class = "LRtab" onclick = "openLRinfo(event, 'LVuse')">Using Landslide Viewer</a>
+					<a class = "LRtab" onclick = "openLRinfo(event, 'LVdownload')">Downloading the Data</a>
 					<a class = "LRtab" onclick = "openLRinfo(event, 'LRfaq')">Frequently Asked Questions</a>
 					<br>
-					<h2>For Data Users</h2>
-					<h3>Request for Acknowledgment of Use of GLC Data</h3>
-					<p>Users of the Global Landslide Catalog data are requested to reference the source of the data in any publication using the citations below:</p>
-					<ul>
-						<li>Kirschbaum, D.B., Stanley, T., & Zhou, Y. (2015). Spatial and temporal analysis of a global landslide catalog.<i> Geomorphology, 249</i>, 4-15. doi:<a href = "https://doi.org/10.1016/j.geomorph.2015.03.016">10.1016/j.geomorph.2015.03.016</a>
-						<li>Kirschbaum, D.B., Adler, R., Hong, Y., Hill, S., & Lerner-Lam, A. (2010). A global landslide catalog for hazard applications: method, results, and limitations. <i>Natural Hazards, 52,</i> 561-575. <a href = "https://doi.org/10.1007/s11069-009-9401-4">doi:10.1007/s11069-009-9401-4</a>
-					</ul>
+					
 					<h2>Contact</h2>
-					<p>If you need help beyond the Get Started page or experience a bug, feel free to email
-					<a href = "mailto:landslide_support@nccs.nasa.gov">landslide_support@nccs.nasa.gov</a>.
+					<p>For any questions related to this system, please contact 
+					<a href = "mailto:landslide_support@nccs.nasa.gov?subject=[LANDSLIDES] ">landslide_support@nccs.nasa.gov</a>.
 					</p>
 				</div> <!-- end right column in wrapper -->
 			</div> <!-- end two-column layout -->
