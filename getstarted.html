@@ -138,7 +138,15 @@
 				}
 				
 				p, ul, ol, li, i, b, th, td {
-				font-size: 13px;
+					font-size: 13px;
+				}
+				
+				.clickablebuttonLR:hover {
+					background-color:rgba(90,176,186,0.2);
+				}
+				
+				.clickablebuttonGO:hover {
+				background-color:rgba(190,37,58,0.2);
 				}
 			</style>
 			
@@ -183,21 +191,28 @@
 			<div class="twocol"> <!-- Two-column layout -->
 				<div class="urone"> <!-- begin left column in wrapper -->
 					<div id = "COOLRgetstarted" class = "LRcontent">
-					<img src = "images/banner_getstarted.png?6" alt = "Get started with using COOLR's Landslide Viewer and Landslide Reporter">
-					<p><p>To learn more about Landslide Viewer and Landslide Reporter, use the navigation on the right side of the page or click the sections below:
+					<img src = "images/banner_gst title.png?1" alt = "Get started with COOLR">
+					<br><br>
+					<h2>What is COOLR?</h2>
+					<p>The Cooperative Open Online Landslide Repository (COOLR) is a worldwide database of landslide events. It currently includes NASA’s Global 
+					Landslide Catalog (GLC) and other landslide reports contributed by citizen scientists. In the future, COOLR will allow for other 
+					landslide inventories to be included.
+					</p>
+					<img src = "images/banner_gst info.png?1" alt = "COOLR has two applications, Landslide Viewer and Landslide Reporter. Use the navigation on the right to continue.">
+					<br><br>
+					
+					<a onclick = "openLRinfo(event, 'LVuse')"><img class = "clickablebuttonLR" src = "images/clickablebutton_LVusing.png?1" alt = "Click to navigate to Using Landslide Viewer"></a>
+					<a onclick = "openLRinfo(event, 'LRprocess')"><img class = "clickablebuttonLR" src = "images/clickablebutton_LRsubmit.png?1" alt = "Click to navigate to How to Submit to Landslide Reporter"></a>
+					<br>
 					<table>
 						<tr>
-							<th>Landslide Viewer</th>
-							<th>Landslide Reporter</th>
-						</tr>
-						<tr>
 							<td width = "230px">
-								<h3>Page Sections</h3>
+								<h3>Landslide Viewer Page Sections</h3>
 								<p><a onclick = "openLRinfo(event, 'LVuse')">Using Landslide Viewer</a></p>
 								<p><a onclick = "openLRinfo(event, 'LVdownload')">Downloading the Data</a></p>
 							</td>
 							<td width = "230px">
-								<h3>Page Sections</h3>
+								<h3>Landslide Reporter Page Sections</h3>
 								<p><a onclick = "openLRinfo(event, 'LRprocess')">How You Can Submit to COOLR</a></p>
 								<p><a onclick = "openLRinfo(event, 'LRuse')">Using Landslide Reporter</a></p>
 								<p><a onclick = "openLRinfo(event, 'LRreport')">Make a Report</a></p>
@@ -209,25 +224,29 @@
 					
 					<div id = "LRprocess" class = "LRcontent">
 						<h2>How You Can Submit to COOLR</h2>
-						<p>In order to build a more comprehensive, worldwide database of landslides, we need you! It is not an easy task and 
-						cannot be accomplished without citizen science. As a citizen scientist, you play a transformational role in improving 
+						<p style = "font-size: 15px; font-weight: bold;">In order to build a more comprehensive, worldwide database of landslides, we need you! </p>
+						<p>Building a global landslide inventory is not an easy task and cannot be accomplished without citizen science. As a citizen scientist, you play a transformational role in improving 
 						landslide science. The Cooperative Open Online Landslide Repository (COOLR) provides a platform to submit landslides that you find in media, in person, or through other 
 						credible means to COOLR. Our goal is to collect as many landslides as we can to enable better research, modeling, prediction, and response.</p>
 						<p>The main steps to the submission process are:
 						</p>
 						<ol>
 							<li><b>Landslide occurs: </b>A landslide event (see definition in the <a href = "guides/COOLRGuide_Primer.pdf" target="_blank">Primer</a>) occurs and is reported in a newspaper article, online database, or in your local area.
-							<li><b>Submit to Landslide Reporter: </b>Using Landslide Reporter, you can add this event to the database and describe its setting, impacts, and details. The <a href = "guides/COOLRGuide_AddEvent.pdf" target="_blank">Add a Landslide Event Guide</a> takes you through this process step-by-step. When investigating a landslide, the most important thing is to <b><span style = "color: #BE2439;"> be in a safe place!</span></b> Do not conduct field work or look at a landslide up close unless you are an expert.
+							<li><b>Submit to Landslide Reporter: </b>Using <a href = "https://landslides.nasa.gov/reporter" target="_blank">Landslide Reporter</a>, you can add this event to the database and describe its setting, impacts, and details. The <a href = "guides/COOLRGuide_AddEvent.pdf" target="_blank">Add a Landslide Event Guide</a> takes you through this process step-by-step. When investigating a landslide, the most important thing is to <b><span style = "color: #BE2439;"> be in a safe place!</span></b> Do not conduct field work or look at a landslide up close unless you are an expert.
 							<li><b>Approval: </b>Our team at NASA checks the incoming landslide reports for accuracy in a best effort basis.
-							<li><b>View Your Landslide: </b>Once approved, your landslide event appears on <a href = "https://maps.nccs.nasa.gov/arcgis/apps/webappviewer/index.html?id=824ea5864ec8423fb985b33ee6bc05b7" target="_blank">Landslide Viewer</a> alongside other landslide databases like the GLC for the world to see.
-							<li><b>Download and Use: </b>Scientists and the public can download the landslide data from Landslide Viewer to use in research, models, and policy work.
+							<li><b>View Your Landslide: </b>Once approved, your landslide event appears on <a href = "https://landslides.nasa.gov/viewer" target="_blank">Landslide Viewer</a> alongside other landslide databases like the GLC for the world to see.
+							<li><b>Download and Use: </b>Scientists and the public can download the landslide data from <a href = "https://landslides.nasa.gov/viewer" target="_blank">Landslide Viewer</a> to use in research, models, and policy work.
 						</ol>
-						<p>For more information about how you can make your landslide submission today, refer to the Navigation on the right.
-						</p>
+					<a onclick = "openLRinfo(event, 'LRuse')"><img src = "images/clickablebutton_LRaccess.png" alt = "Click to navigate to Using Landslide Reporter"></a>
+					<a onclick = "openLRinfo(event, 'LRreport')"><img src = "images/clickablebutton_LRmake.png" alt = "Click to navigate to Make a Report"></a>
 					</div>
 					
 					<div id = "LRuse" class = "LRcontent">
 						<h2>Using Landslide Reporter</h2>
+						<p><a href = "https://landslides.nasa.gov/reporter" target="_blank">Landslide Reporter</a> is the submission portal for COOLR. When you find a landslide event through a news article or
+						in-person, you can open the web application to add information about the location, date, type of landslide, 
+						and other details about the event in Landslide Reporter. </p>
+						
 						<h3>Contents</h3>
 						<ul>
 							<li><a href = "#accessingLR">Accessing the application</a>
@@ -235,7 +254,9 @@
 							<li><a href = "#usingLRphone">Using Landslide Reporter on your mobile device</a>
 						</ul>
 						<a id = "accessingLR"></a><h2>Accessing the Application</h2>
-						<p>Landslide Reporter can be accessed via internet by your computer or mobile device. You will need a Facebook account or Google+ account to log in. Logging in will allow you to access your previous submissions. Your credentials will not be publicly linked to your reports in the online database. Please see our <a href = "privacy.html">privacy policy</a> for more information.
+						<p>Landslide Reporter can be accessed via internet by your computer or mobile device. The URL for reaching Landslide Reporter is
+						<p style = "font-size: 15px; font-weight: bold;text-align: center;"><a href = "https://landslides.nasa.gov/reporter" target="_blank">landslides.nasa.gov/reporter</a></p>
+						<p>You will need a Facebook account or Google+ account to log in. Logging in will allow you to access your previous submissions. Your credentials will not be publicly linked to your reports in the online database. Please see our <a href = "privacy.html">privacy policy</a> for more information.
 						</p>
 						<p>Upon signing in, you will be presented with the <a href = "privacy.html">Terms and Conditions</a> of using Landslide Reporter. <b>Closing the box indicates you have accepted the Terms and Conditions.</b>
 						</p>
@@ -253,8 +274,6 @@
 							<li><b>Red points: </b>Your previously-submitted landslide reports.
 							<li><b>Orange points: </b>Points added to the Cooperative Open Online Landslide Repository (COOLR).
 						</ol>
-						<br><br>
-						
 						<br><br>						
 						<a id = "usingLRphone"></a><h2>Using Landslide Reporter on your mobile device</h2>
 						<img src = "images/LR Mobile Schematic.png" alt = "Landslide Reporter screen on mobile">
@@ -286,6 +305,7 @@
 					
 					<div id = "LRreport" class = "LRcontent">
 						<h2>Make a Report</h2>
+						<p>Are you ready to contribute to COOLR? Reviewing the Landslide Reporter’s Guide below will help you make a better submission to the database as you browse through basic information on landslides, hone your skills at identifying landslides, step through the report process, and follow tips on pinpointing a landslide’s location.</p>
 						<h3>Contents</h3>
 						<ul>
 							<li><a href = "#howtoguides">How-to guides</a></li>
@@ -293,8 +313,6 @@
 						</ul>
 						
 						<a id = "howtoguides"></a><h2>How-to guides</h2>
-						<p>Are you ready to contribute to COOLR? Reviewing the Landslide Reporter’s Guide below will help you make a better submission to the database as you browse through basic information on landslides, hone your skills at identifying landslides, step through the report process, and follow tips on pinpointing a landslide’s location.</p>
-						
 						<table>
 							<tr>
 								<td><a href = "guides/COOLRGuide_Primer.pdf" target="_blank"><img src = "images/thumb_guideprimer.png?3" width = "100px" style = "float:left; padding-right:10px;"></a></td>
@@ -345,7 +363,10 @@
 					</div> <!-- end Make a Report -->
 					
 					<div id = "LVuse" class = "LRcontent">
-						<h2>Navigating Landslide Viewer</h2>
+						<h2>Using Landslide Viewer</h2>
+						<p>All approved landslide reports, Global Landslide Catalog data, and other COOLR data appear in <a href = "https://landslides.nasa.gov/viewer" target="_blank">Landslide Viewer.</a> 
+						You can select different layers on the map to organize and visualize the reports and view on top of with environmental information. 
+						You can also download all landslide data for in-depth analysis.</p>
 						<h3>Contents</h3>
 						<ul>
 							<li><a href = "#accessingLV">Accessing the application</a></li>
@@ -355,7 +376,9 @@
 							<li><a href = "#LVtimeslider">Using the Time Slider</a></li>
 						</ul>
 						<a id = "accessingLV"></a><h2>Accessing the application</h2>
-						<p>Landslide Viewer can be accessed by an internet browser on either your computer or mobile device. Upon loading the page, you will be presented with the Terms and Conditions of using Landslide Viewer. Checking the box “I agree to the above terms and conditions” will grant you access to the application.</p>
+						<p>Landslide Viewer can be accessed by an internet browser on either your computer or mobile device. The URL for reaching Landslide Viewer is</p>
+						<p style = "font-size: 15px; font-weight: bold;text-align: center;"><a href = "https://landslides.nasa.gov/viewer" target="_blank">landslides.nasa.gov/viewer</a></p>
+						<p>Upon loading the page, you will be presented with the Terms and Conditions of using Landslide Viewer. Checking the box “I agree to the above terms and conditions” will grant you access to the application.</p>
 						<p>Once logged in, your browser may ask you to use your location. Click “Accept” or “Allow” so that the browser can pinpoint your current location, making it easier for you to submit local events.</p>
 
 						<a id = "usingLVweb"></a><h2>Using Landslide Viewer on the web</h2>
@@ -461,6 +484,7 @@
 					
 					<div id = "LRfaq" class = "LRcontent">
 						<h2>Frequently Asked Questions</h2>
+						<p style = "font-size: 15px; font-weight: bold;">General</p>
 						<span class = "showhide keystaff_header fnt_bold dsply_blck collapsible-heading">
 						<a href = "#" class = "collapsible-heading-toggle">
 							<span class = "collapsible-heading-status">Hide</span>
@@ -471,7 +495,6 @@
 							<li><a href = "https://landslides.nasa.gov/reporter" target="_blank">Landslide Reporter</a> is the submission portal for COOLR. When you find a landslide event through a news article or
 							in-person, you can open the web application to add information about the location, date, type of landslide, 
 							and other details about the event in Landslide Reporter. See the right-side navigation to start contributing to COOLR.
-						</p>
 						</ul> <!-- end of FAQ 1 -->
 						<br>
 						<!-- FAQ 6 -->
@@ -482,29 +505,12 @@
 							</a>
 						</span>
 						<ul class = "type-list-none collapsible-content collapsible-content-collapsed" aria-hidden = "true">
-							<li>All approved landslide reports, Global Landslide Catalog data, and other COOLR data appears in <a href = "https://landslides.nasa.gov/viewer" target="_blank">Landslide Viewer.</a> 
+							<li>All approved landslide reports, Global Landslide Catalog data, and other COOLR data appear in <a href = "https://landslides.nasa.gov/viewer" target="_blank">Landslide Viewer.</a> 
 							You can select different layers on the map to organize and visualize the reports and view on top of with environmental information. 
 							There is also a link to download all landslide data for in-depth analysis.
 						</ul> <!-- end of FAQ 6 -->
 						<br>
-						<span class = "showhide keystaff_header fnt_bold dsply_blck collapsible-heading">
-							<a href = "#" class = "collapsible-heading-toggle">
-							Can I edit/delete my report after I submitted it?
-							</a>
-						</span>
-						<ul class = "type-list-none collapsible-content collapsible-content-collapsed" aria-hidden = "true">
-							<li>If the submission hasn’t been checked by our team yet, you may edit it under My Submissions. Click on the report you want to edit, and click the pencil icon or trash icon in the top right-hand corner to edit or delete the report.
-						</ul>
-						
-						<span class = "showhide keystaff_header fnt_bold dsply_blck collapsible-heading">
-							<a href = "#" class = "collapsible-heading-toggle">
-							Are the submissions quality-checked before they are added to the catalog?
-							</a>
-						</span>
-						<ul class = "type-list-none collapsible-content collapsible-content-collapsed" aria-hidden = "true">
-							<li>Yes, all reports submitted through Landslide Reporter are quality-checked on a best effort basis by members of the team at NASA Goddard Space Flight Center.
-						</ul>
-						
+						<!-- start of FAQ -->
 						<span class = "showhide keystaff_header fnt_bold dsply_blck collapsible-heading">
 							<a href = "#" class = "collapsible-heading-toggle">
 							Is my information tied to my landslide reports and made publicly available on COOLR?
@@ -512,8 +518,30 @@
 						</span>
 						<ul class = "type-list-none collapsible-content collapsible-content-collapsed" aria-hidden = "true">
 							<li>No, we do not store any personally identifiable information nor do we make that information public. 
-						</ul>
-						
+						</ul> <!-- end of FAQ -->
+						<br><br>
+						<p style = "font-size: 15px; font-weight: bold;">Landslide Reporter</p>
+						<span class = "showhide keystaff_header fnt_bold dsply_blck collapsible-heading">
+							<a href = "#" class = "collapsible-heading-toggle">
+							Can I edit/delete my report after I submitted it?
+							</a>
+						</span>
+						<ul class = "type-list-none collapsible-content collapsible-content-collapsed" aria-hidden = "true">
+							<li>If the submission hasn’t been checked by our team yet, you may edit it under My Submissions. Click on the report you want to edit, and click the pencil icon or trash icon in the top right-hand corner to edit or delete the report.
+						</ul><!-- end of FAQ -->
+						<br>
+						<!-- start of FAQ -->
+						<span class = "showhide keystaff_header fnt_bold dsply_blck collapsible-heading">
+							<a href = "#" class = "collapsible-heading-toggle">
+							Are the submissions quality-checked before they are added to the catalog?
+							</a>
+						</span>
+						<ul class = "type-list-none collapsible-content collapsible-content-collapsed" aria-hidden = "true">
+							<li>Yes, all reports submitted through Landslide Reporter are quality-checked on a best effort basis by members of the team at NASA Goddard Space Flight Center.
+						</ul><!-- end of FAQ -->
+						<br><br>
+						<p style = "font-size: 15px; font-weight: bold;">Data Download and Analysis</p>
+						<!-- start of FAQ -->
 						<span class = "showhide keystaff_header fnt_bold dsply_blck collapsible-heading">
 							<a href = "#" class = "collapsible-heading-toggle">
 							I used the Global Landslide Catalog (GLC) in my research. How do I cite it?
@@ -525,7 +553,7 @@
 								<li>Kirschbaum, D.B., Stanley, T., & Zhou, Y. (2015). Spatial and temporal analysis of a global landslide catalog. <i>Geomorphology</i>, 249, 4-15. doi:10.1016/j.geomorph.2015.03.016
 								<li>Kirschbaum, D.B., Adler, R., Hong, Y., Hill, S., & Lerner-Lam, A. (2010). A global landslide catalog for hazard applications: method, results, and limitations. <i>Natural Hazards</i>, 52, 561-575. doi:10.1007/s11069-009-9401-4
 							</ul>
-						</ul>
+						</ul> <!-- end of FAQ -->
 						
 					</div> <!-- end LRfaq div -->
 					
@@ -542,7 +570,7 @@
 					<a class = "LRtab" onclick = "openLRinfo(event, 'LRfaq')">Frequently Asked Questions</a>
 					<br>
 					
-					<h2>Contact</h2>
+					<h2>Contact Us</h2>
 					<p>For any questions related to this system, please contact 
 					<a href = "mailto:landslide_support@nccs.nasa.gov?subject=[LANDSLIDES] Your subject here">landslide_support@nccs.nasa.gov</a>.
 					</p>
