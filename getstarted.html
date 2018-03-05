@@ -141,6 +141,13 @@
 					font-size: 13px;
 				}
 				
+				p.LRbold {
+					font-size: 15px; 
+					font-weight: bold;
+					text-align: center;
+					color: #000000;
+				}
+				
 				.clickablebuttonLR:hover {
 					background-color:rgba(90,176,186,0.2);
 				}
@@ -222,34 +229,13 @@
 							</tr>
 						</table> -->
 						<br>
-						<h2>Why are citizen scientists needed?</h2>
-						<p>The Global Landslide Catalog (GLC) provides new insight into landslide hazards around the world, but it has been a manual and very 
-						time consuming process that is hard to maintain. In fact, if we sum up all the hours it has taken over the past 10 years to compile this 
-						database it would total over 140 days or 84 work weeks. The database is also challenged by biases affecting where and when landslide 
-						information is available (for more details please see the <a href = "publications.html">publications</a> section). Therefore, we are appealing to the global citizen 
-						science community to help advance our knowledge of where and when landslides are happening around the world by adding reports to the 
-						Cooperative Open Online Landslide Repository (COOLR). Citizen scientists are people like you who can use their knowledge to advance 
-						scientific research.</p>
-						<p><b>Citizen science enables:</b></p>
-						<ol>
-						<li>A collection with as many different sources and as little bias as possible, 
-						including first-hand accounts, reports in other languages, and points from other 
-						databases
-						<li>More hands to contribute reports, leading to a more up-to-date and thorough
-						database
-						<li>More awareness and education about landslides as a natural process and natural/man-made 
-						hazard
-						</ol>
-						<p>With citizen science, we can improve both the quantity and quality open landslide data to provide a clearer picture of how landslides are shaping our world.</p>
-						<p style = "font-size: 15px; font-weight: bold;">Every landslide report made by you is another step towards a more predictable future!</p>
-						<br><br>
 						
 					</div> <!-- end Get Started -->
 					
 					<div id = "LRprocess" class = "LRcontent">
 						<br>
 						<h2>How You Can Submit to COOLR</h2>
-						<p style = "font-size: 15px; font-weight: bold;">In order to build a more comprehensive, worldwide database of landslides, we need you! </p>
+						<p class = "LRbold">In order to build a more comprehensive, worldwide database of landslides, we need you! </p>
 						<p>Building a global landslide inventory is not an easy task and cannot be accomplished without citizen science. As a citizen scientist, you play a transformational role in improving 
 						landslide science. The Cooperative Open Online Landslide Repository (COOLR) provides a platform to submit landslides that you find in media, in person, or through other 
 						credible means to COOLR. Our goal is to collect as many landslides as we can to enable better research, modeling, prediction, and response.</p>
@@ -263,6 +249,8 @@
 							<li><b>View Your Landslide: </b>Once approved, your landslide event appears on <a href = "#" onclick = "openLRinfo(event, 'LVuse')">Landslide Viewer</a> alongside other landslide databases like the GLC for the world to see.
 							<li><b>Download and Use: </b>Scientists and the public can <a href = "#" onclick = "openLRinfo(event, 'LVdownload')">download the landslide data</a> from Landslide Viewer to use in research, models, and policy work.
 						</ol>
+						
+						<p class = "LRbold">Every landslide report made by you is another step towards a more predictable future!</p>
 					<h2>Next steps</h2>
 					<p>Now that you know how the submission process works, click below to learn more about how you can make a landslide report.</p>
 					<a href = "#" onclick = "openLRinfo(event, 'LRuse')"><img class = "clickablebuttonLR" src = "images/clickablebutton_LRaccess.png" alt = "Click to navigate to Using Landslide Reporter"></a>
@@ -286,7 +274,7 @@
 						</ul>
 						<a id = "accessingLR"></a><h2>Accessing the Application</h2>
 						<p>Landslide Reporter can be accessed via internet by your computer or mobile device. The URL for reaching Landslide Reporter is
-						<p style = "font-size: 15px; font-weight: bold; text-align: center; color: #000000;"><a href = "https://landslides.nasa.gov/reporter" target="_blank">landslides.nasa.gov/reporter</a></p>
+						<p class = "LRbold"><a href = "https://landslides.nasa.gov/reporter" target="_blank">landslides.nasa.gov/reporter</a></p>
 						<p>You will need a Facebook account or Google+ account to log in. Logging in will allow you to access your previous submissions. Your credentials will not be publicly linked to your reports in the online database. Please see our <a href = "privacy.html">privacy policy</a> for more information.
 						</p>
 						<p>Upon signing in, you will be presented with the <a href = "privacy.html">Terms and Conditions</a> of using Landslide Reporter. You must check the box and agree to the Terms and Conditions before you can use the application.
@@ -294,40 +282,40 @@
 						<p>Once logged in, your browser may ask you to use your location. Click “Accept” or “Allow” so that the browser can pinpoint your current location, making it easier for you to submit local events.
 						</p>
 						<a id = "usingLRweb"></a><h2>Using Landslide Reporter on the web</h2>
-						<img src = "images/LR Web Schematic.png" alt = "Landslide Reporter screen">
+						<img src = "images/LR Web Schematic.png?2" alt = "Landslide Reporter screen">
 						<br><br><i>Main screen</i>
 						<ol>
 							<li><b>Map navigation: </b>Zoom and search for locations
-							<li><b>Username: </b>Opens a drop-down menu to see your previous submissions or log out of your account.
+							<li><b>Red points or polygons: </b>Your previously-submitted landslide reports.
+							<li><b>Landslide Reporter Map Sidebar: </b>The sidebar for submitting new landslide reports to the database. See the <a href = "#" onclick = "openLRinfo(event, 'LRreport')"> how-to guides</a> for how to submit a report.
+							<li><b>Orange points or polygons: </b>Landslide events added to the Cooperative Open Online Landslide Repository (COOLR). Cannot be clicked.
+							<li><b>Username/Menu: </b>Opens a drop-down menu to see your previous submissions or log out of your account.
 							<li><b>Terms and Conditions: </b>Opens the Terms and Conditions for using Landslide Reporter.
-							<li><b>Landslide Reporter Map Sidebar: </b>The sidebar for submitting new reports to the database.
-							<li><b>Red points: </b>Your previously-submitted landslide reports.
-							<li><b>Orange points: </b>Points added to the Cooperative Open Online Landslide Repository (COOLR).
 						</ol>
 						<br><br>						
 						<a id = "usingLRphone"></a><h2>Using Landslide Reporter on your mobile device</h2>
-						<img src = "images/LR Mobile Schematic.png" alt = "Landslide Reporter screen on mobile">
+						<img src = "images/LR Mobile Schematic.png?3" alt = "Landslide Reporter screen on mobile">
 						<br><br><i>Main screen</i>
 						<ol>
 							<li><b>Menu: </b>See your previous submissions, review the Terms and Conditions of using Landslide Reporter, or sign out of your account.</li>
-							<li><b>Landslide Reporter Map: </b>The main screen for submitting new reports to the database or viewing the map.</li>
+							<li><b>Landslide Reporter Map: </b>The main screen for submitting new reports to the database or viewing the map. See the <a href = "#" onclick = "openLRinfo(event, 'LRreport')"> how-to guides</a> for how to submit a report.
 						</ol>
 	
-						<i>Point selection screen</i>
+						<i>List view</i>
 						<p>After selecting the appropriate Landslide Reporter Map submission option, Points or Polygons, the main screen will change to display a list of your previous submissions.</p>
 						<ol start = "3">
 							<li><b>GLC Event List: </b>List of all your previously-submitted reports, either all points or all polygons.</li>
 							<li><b>Back arrow: </b>Sends the sidebar to the previous screen.</li>
-							<li><b>Map view: </b>Opens a view of the map.</li>
-							<li><b>Submit a Landslide Report: </b>The green button will open the Landslide Reporter submission form.</li>
+							<li><b>Map view: </b>Opens the <i>Map view</i>, a map display with your and COOLR's landslide points.</li>
+							<li><b>Submit a Landslide Report: </b>The green button will open the Landslide Reporter submission form. See the <a href = "#" onclick = "openLRinfo(event, 'LRreport')"> how-to guides</a> for how to submit a report.
 						</ol>
 						
 						<i>Map view</i>
 						<ol start = "7">
-							<li><b>List view: </b>The “list” icon returns you to the GLC Event List.</li>
-							<li><b>Map navigation: </b>Zoom and search for locations.</li>
 							<li><b>Red points or polygons: </b>Your previously-submitted landslide reports (either points or polygons depending on your Landslide Reporter Map sidebar selection). Click a report to open up the details about the event.</li>
-							<li><b>Orange points or polygons: </b>Points added to the Cooperative Open Online Landslide Repository (COOLR). Cannot be clicked.</li>
+							<li><b>Orange points or polygons: </b>Landslide events added to the Cooperative Open Online Landslide Repository (COOLR). Cannot be clicked.</li>
+							<li><b>Map navigation: </b>Zoom and search for locations.</li>
+							<li><b>List view: </b>The “list” icon returns you to the <i>List view</i></li>
 						</ol>
 						<br><br>
 						<a id = "accnextstep"></a><h2>Next steps</h2>
@@ -340,6 +328,7 @@
 						<img src = "images/banner_gst LR.png?2" alt = "Landslide Reporter">
 						<h2>Make a Report</h2>
 						<p>Are you ready to contribute to COOLR? Reviewing the Landslide Reporter’s Guide below will help you make a better submission to the database as you browse through basic information on landslides, hone your skills at identifying landslides, step through the report process, and follow tips on pinpointing a landslide’s location.</p>
+						<p>If you're stuck on how to use the application, go back to the <a href = "#" onclick = "openLRinfo(event, 'LRuse')">Using Landslide Reporter</a> section for more information on navigating the application's controls.</p>
 						<h3>Contents</h3>
 						<ul>
 							<li><a href = "#howtoguides">How-to guides</a></li>
@@ -420,48 +409,46 @@
 						</ul>
 						<a id = "accessingLV"></a><h2>Accessing the application</h2>
 						<p>Landslide Viewer can be accessed by an internet browser on either your computer or mobile device. The URL for reaching Landslide Viewer is</p>
-						<p style = "font-size: 15px; font-weight: bold;text-align: center; color: #000000;"><a href = "https://landslides.nasa.gov/viewer" target="_blank">landslides.nasa.gov/viewer</a></p>
+						<p class = "LRbold"><a href = "https://landslides.nasa.gov/viewer" target="_blank">landslides.nasa.gov/viewer</a></p>
 						<p>Upon loading the page, you will be presented with the Terms and Conditions of using Landslide Viewer. Checking the box “I agree to the above terms and conditions” will grant you access to the application.</p>
 						<p>Once logged in, your browser may ask you to use your location. Click “Accept” or “Allow” so that the browser can pinpoint your current location, making it easier for you to submit local events.</p>
 
 						<a id = "usingLVweb"></a><h2>Using Landslide Viewer on the web</h2>
-						<img src = "images/LV Web Schematic.png" alt = "Landslide Viewer screen">
+						<img src = "images/LV Web Schematic.png?2" alt = "Landslide Viewer screen">
 						<br><br>
 						<i>Main Screen</i>
 						<ol>
 							<li><b>Map navigation: </b>Zoom and search for locations.
-							<li><s><b>Location search: </b>Not available</s>
-							<li><b>Measurement: </b>Measure area, measure distance, and find geographic coordinates.
-							<li><s><b>Summarize: </b>Not available</s>
-							<li><b>Draw: </b>Opens a menu with tools to draw points, lines, shapes, and add text to the map.
+							<li><b>Orange points or polygons: </b>Landslide events added to the Cooperative Open Online Landslide Repository (COOLR). Clicking will open details about a particular event.
 							<li><b>Download: </b>Opens a new page with the link to download the Global Landslide Catalog.
-							<li><b>Points: </b>Landslide events. Clicking will open details about a particular event.
 							<li><b>Bookmark: </b>Your saved/bookmarked locations and the option to add/delete bookmarks. 
 							<li><b>Basemap Gallery: </b>Different options for the base or reference map, like satellite imagery, OpenStreetMap roads, terrain, etc.
 							<li><b>Layer List: </b>Select/deselect what to display on the map, like the database points and polygons, models for flood and landslide risk, etc.
-							<li><b>Time Slider: </b>: Pan through landslide events chronologically. A “Time Aware” layer must be selected from Layer List for the Time Slider to be available.
+							<li><b>Time Slider: </b>: Pan through landslide events chronologically. A <a href = "#LVtimeslider">“Time Aware”</a> layer must be selected from Layer List for the Time Slider to be available.
 							<li><b>Print: </b>Save your current map as a downloadable and printable file on your computer.
 							<li><b>About: </b>Information about ArcGIS.
+							<li><b>Draw: </b>Opens a menu with tools to draw points, lines, shapes, and add text to the map.
+							<li><b>Measurement: </b>Measure area, measure distance, and find geographic coordinates.
+					
 						</ol>
 						<a id = "usingLVmobile"></a><h2>Using Landslide Viewer on your mobile device</h2>
-						<img src = "images/LV Mobile Schematic.png" alt = "Landslide Viewer screen">
+						<img src = "images/LV Mobile Schematic.png?2" alt = "Landslide Viewer screen">
 						<br><br>
 						<i>Main Screen</i>
 						<ol>
 							<li><b>Map navigation: </b>Zoom and search for locations.
-							<li><s><b>Location search: </b>Not available</s>
-							<li><b>Measurement: </b>Measure area, measure distance, and find geographic coordinates.
-							<li><s><b>Summarize: </b>Not available</s>
-							<li><b>Draw: </b>Opens a menu with tools to draw points, lines, shapes, and add text to the map.
-							<li><b>Download: </b>Opens a new page with the link to download the Global Landslide Catalog.
-							<li><b>Points: </b>Landslide events. Clicking will open details about a particular event.
+							<li><b>Orange points or polygons: </b>Landslide events added to the Cooperative Open Online Landslide Repository (COOLR). Clicking will open details about a particular event.
+							<li><b>Download: </b>Opens a menu with the link to download the Global Landslide Catalog.
 							<li><b>Bookmark: </b>Your saved/bookmarked locations and the option to add/delete bookmarks. 
 							<li><b>Basemap Gallery: </b>Different options for the map, like satellite imagery, OpenStreetMap roads, terrain, etc.
 							<li><b>Layer List: </b>Select/deselect what to display on the map, like the database points and polygons, models for flood and landslide risk, etc.
-							<li><b>Time Slider: </b>: Pan through landslide events chronologically. A “Time Aware” layer must be selected from Layer List for the Time Slider to be available.
+							<li><b>Time Slider: </b>: Pan through landslide events chronologically. A <a href = "#LVtimeslider">“Time Aware”</a> layer must be selected from Layer List for the Time Slider to be available.
 							<li><b>Menu: </b>Opens more Landslide Viewer options.
 							<li><b>Print: </b>Save your current map as a downloadable and printable file on your computer.
 							<li><b>About: </b>Information about ArcGIS.
+							<li><b>Draw: </b>Opens a menu with tools to draw points, lines, shapes, and add text to the map.
+							<li><b>Measurement: </b>Measure area, measure distance, and find geographic coordinates.
+							
 						</ol>
 						<br>
 						<a id = "LVlayerlist"></a><h2>COOLR data analysis options in Layer List</h2>
@@ -488,7 +475,7 @@
 						<a id = "LVtimeslider"></a><h2>Using the Time Slider</h2>
 						<img src = "images/LV timeslider.png" alt = "Time Slider" width = "400px">
 						<br><br>
-						<p>The Time Slider allows you to pan through landslide events chronologically. <b>To use the tool, a Time Aware layer must be selected from the Layer List.</b></p>
+						<p>The Time Slider allows you to pan through landslide events chronologically. <b>To use the tool, a Time Aware layer (you will see the words "Time Aware" next to the layer name) must be selected from the Layer List.</b></p>
 						<p>Once a Time Aware layer is selected, click the Time Slider icon in the menu to open the Time Slider panel. You can press “play” to automatically advance the sliders, change the range of dates, and change the speed of the sliders.</p>
 						<a id = "LVnextstep"></a><h2>Next steps</h2>
 						<a href = "https://landslides.nasa.gov/viewer" target="_blank"><img class = "clickablebuttonGO" src = "images/clickablebutton_LVgo.png" alt = "Click to go to Landslide Viewer"></a>
@@ -572,6 +559,34 @@
 							The database was created in at NASA Goddard Space Flight Center and currently contains more than 11,000 reports on landslides, debris flows, rock avalanches, etc. around the world. Reports of landslides are found primarily from online media, including news articles as well as other databases. 
 							The GLC has been compiled by scientists, interns and other colleagues at NASA GSFC. The GLC has been cited more than 75 times in peer-reviewed articles. It is now a part of the Cooperative Open Online Landslide Repository (COOLR)'s vast database that also contains citizen science data and, in the future, other landslide inventories.
 						</ul> <!-- end of FAQ 2 -->
+						<br>
+						<!-- start FAQ -->
+						<ul class = "type-list-none collapsible-content collapsible-content-collapsed" aria-hidden = "true">
+							<span class = "showhide keystaff_header fnt_bold dsply_blck collapsible-heading">
+								<a href = "#" class = "collapsible-heading-toggle">
+								Why are citizen scientists needed?
+								</a>
+							</span>
+							<li>The Global Landslide Catalog (GLC) provides new insight into landslide hazards around the world, but it has been a manual and very 
+							time consuming process that is hard to maintain. In fact, if we sum up all the hours it has taken over the past 10 years to compile this 
+							database it would total over 140 days or 84 work weeks. The database is also challenged by biases affecting where and when landslide 
+							information is available (for more details please see the <a href = "publications.html">publications</a> section). Therefore, we are appealing to the global citizen 
+							science community to help advance our knowledge of where and when landslides are happening around the world by adding reports to the 
+							Cooperative Open Online Landslide Repository (COOLR). Citizen scientists are people like you who can use their knowledge to advance 
+							scientific research.
+							<li>Citizen science enables:
+							<ol>
+								<li>1. A collection with as many different sources and as little bias as possible, 
+								including first-hand accounts, reports in other languages, and points from other 
+								databases
+								<li>2. More hands to contribute reports, leading to a more up-to-date and thorough
+								database
+								<li>3. More awareness and education about landslides as a natural process and natural/man-made 
+								hazard
+							</ol>
+							<li>With citizen science, we can improve both the quantity and quality open landslide data to provide a clearer picture of how landslides are shaping our world.</p>
+							<li>Every landslide report made by you is another step towards a more predictable future!
+						</ul> <!-- end FAQ -->
 						<br>
 						<!-- start of FAQ -->
 						<span class = "showhide keystaff_header fnt_bold dsply_blck collapsible-heading">
