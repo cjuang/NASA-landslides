@@ -155,6 +155,12 @@
 				.clickablebuttonGO:hover {
 				background-color:rgba(190,37,58,0.2);
 				}
+				
+				.LRwarning {
+					padding: 10px;
+					text-align: center;
+					background-color: #F9E79F;
+				}
 			</style>
 			
 			<script>
@@ -192,7 +198,9 @@
 						<li class = "navbarLR" style = "float: right; background-color: #5AB1BB;"><a href = "https://landslides.nasa.gov/reporter" target="_blank">Landslide Reporter</a></li>
 					</ul> <!-- end Navigation -->
 				</div>
-				
+			<div class = "LRwarning">
+				<b>Please note:</b> Scheduled system maintenance on <b>March 22, 2018, 8:00 AM - 2:00 PM EST</b> will affect access to Landslide Reporter and Landslide Viewer. We are sorry for the inconvenience!
+			</div>
 			</div> <!-- end Banner -->
 			<br>
 			<div class="twocol"> <!-- Two-column layout -->
@@ -546,13 +554,14 @@
 							The GLC has been compiled by scientists, interns and other colleagues at NASA GSFC. The GLC has been cited more than 75 times in peer-reviewed articles. It is now a part of the Cooperative Open Online Landslide Repository (COOLR)'s vast database that also contains citizen science data and, in the future, other landslide inventories.
 						</ul> <!-- end of FAQ 2 -->
 						<br>
-						<!-- start FAQ -->
+						<!-- FAQ -->
+						<span class = "showhide keystaff_header fnt_bold dsply_blck collapsible-heading">
+							<a href = "#" class = "collapsible-heading-toggle">
+							<span class = "collapsible-heading-status">Hide</span>
+							Why are citizen scientists needed?
+							</a>
+						</span>
 						<ul class = "type-list-none collapsible-content collapsible-content-collapsed" aria-hidden = "true">
-							<span class = "showhide keystaff_header fnt_bold dsply_blck collapsible-heading">
-								<a href = "#" class = "collapsible-heading-toggle">
-								Why are citizen scientists needed?
-								</a>
-							</span>
 							<li>The Global Landslide Catalog (GLC) provides new insight into landslide hazards around the world, but it has been a manual and very 
 							time consuming process that is hard to maintain. In fact, if we sum up all the hours it has taken over the past 10 years to compile this 
 							database it would total over 140 days or 84 work weeks. The database is also challenged by biases affecting where and when landslide 
@@ -572,7 +581,7 @@
 							</ol>
 							<li>With citizen science, we can improve both the quantity and quality open landslide data to provide a clearer picture of how landslides are shaping our world.</p>
 							<li>Every landslide report made by you is another step towards a more predictable future!
-						</ul> <!-- end FAQ -->
+						</ul> <!-- end of FAQ  -->
 						<br>
 						<!-- start of FAQ -->
 						<span class = "showhide keystaff_header fnt_bold dsply_blck collapsible-heading">
