@@ -1,4 +1,4 @@
-# landslides-info
+# NASA-landslides-SED
 The website for the Cooperative Open Online Landslide Repository (COOLR), a global landslide catalog and system created and managed by NASA Goddard Space Flight Center (GSFC). The website points visitors to NASA's landslide efforts, the citizen science web application Landslide Reporter, and the portal to view all COOLR data at Landslide Viewer.
 
 # languages and tools used
